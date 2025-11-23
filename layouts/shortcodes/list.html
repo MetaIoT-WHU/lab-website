@@ -1,0 +1,30 @@
+{{/* 获取参数 */}}
+{{ $dataName := .Get "data" }} {{/* 例如 "projects" */}}
+{{ $key := .Get "key" }} {{/* 例如 "group" */}}
+{{ $val := .Get "value" }} {{/* 例如 "theme" */}}
+{{ $comp := .Get "component" }} {{/* 例如 "card" */}}
+{{ $style := .Get "style" }} {{/* 例如 "project" */}}
+
+{{/* 获取数据文件 */}}
+{{ $dataSource := index site.Data $dataName }}
+
+{{/* 重要：加上 class="grid" 容器！
+Jekyll 版可能是在父级 markdown 里隐式包含的，或者由 cols.html 控制。
+在 Hugo 重构版中，我们在这里显式加上，保证网格样式生效。
+*/}}
+<div class="grid">
+{{ if $dataSource }}
+{{/* 过滤数据：相当于 Jekyll 的 where_exp */}}
+{{ $items := where $dataSource $key $val }}
+
+{{ range $items }}
+{{/* 合并参数：将当前数据 (.) 和 style 参数合并传给 card.html
+这样 card 内部既能拿到 .title, .image 也能拿到 .style
+*/}}
+{{ partial (printf "%s.html" $comp) (merge . (dict "style" $style)) }}
+{{ end }}
+
+{{ else }}
+<p>Error: Data file '{{ $dataName }}' not found.</p>
+{{ end }}
+</div>

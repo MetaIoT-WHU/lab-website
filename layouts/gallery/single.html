@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+{{/* 1. Intro Section */}}
+{{ with .Params.intro }}
+<section class="background" data-size="page" {{ if .dark }}data-dark="true" {{ end }}>
+    <h1 id="gallery">
+        {{ if .icon }}<i class="icon {{ .icon }}"></i>{{ end }}{{ .title }}
+    </h1>
+    {{ if .content }}<p>{{ .content }}</p>{{ end }}
+</section>
+{{ end }}
+
+{{/* 2. Gallery Grid Section */}}
+<section class="background" data-size="page">
+    <h2 id="colorful-activities">Colorful activities</h2>
+
+    {{/* 容器 ID */}}
+    <div class="row" id="Viewer">
+        {{ if site.Data.galleries }}
+        {{ range sort site.Data.galleries.events "date" "desc" }}
+        {{ partial "gallery-card.html" . }}
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+
+{{/* =========================================
+3. 核心修复区：资源加载
+========================================= */}}
+
+{{/* A. 加载 Viewer.css (必须！) */}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
+
+{{/* B. 加载 Viewer.js (尝试本地，失败用CDN) */}}
+{{ $viewerJS := resources.Get "js/viewer.min.js" }}
+{{ if $viewerJS }}
+<script src="{{ $viewerJS.RelPermalink }}"></script>
+{{ else }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+{{ end }}
+
+{{/* C. 初始化脚本 */}}
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("Gallery Page Loaded."); // 调试信息
+
+        // 1. 确保图片懒加载执行
+        if (typeof lazyload === "function") {
+            lazyload();
+        }
+
+        // 2. 初始化 Viewer.js
+        const galleryElement = document.getElementById('Viewer');
+
+        // 检查库是否加载成功
+        if (typeof Viewer === 'undefined') {
+            console.error("Viewer.js library NOT loaded!");
+            return;
+        }
+
+        if (galleryElement) {
+            console.log("Initializing Viewer..."); // 调试信息
+            new Viewer(galleryElement, {
+                title: true,
+                toolbar: true,
+                rotatable: true,
+                scalable: true,
+                fullscreen: false,
+                zoomRatio: 0.5,
+
+                // [过滤逻辑]：只允许查看 .gallery-image 下的 img
+                filter(image) {
+                    return image.parentElement.classList.contains('gallery-image');
+                },
+
+                // [调试]：图片查看时触发
+                view(event) {
+                    console.log("Viewing image:", event.detail.originalImage.src);
+                }
+            });
+        } else {
+            console.error("Gallery Element #Viewer not found!");
+        }
+    });
+</script>
+
+{{ end }}

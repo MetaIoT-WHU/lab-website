@@ -1,0 +1,64 @@
+$two: 750px;
+$one: 500px;
+
+.grid {
+  display: grid;
+  --repeat: 3;
+  // 核心布局：最小300px，自动填充
+  grid-template-columns: repeat(var(--repeat), minmax(0, 1fr));
+  justify-content: center;
+  align-items: stretch; // 关键修改：让卡片高度拉伸对齐
+  gap: 40px;
+  margin: 40px 0;
+
+  .portrait-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+}
+
+// 强制 grid 的直接子元素（也就是 .card）适应网格
+.grid>* {
+  min-width: 0;
+  min-height: 0;
+
+  // 关键修复：强制覆盖 card.scss 里的 400px 固定宽度
+  width: 100% !important;
+
+  // 关键修复：让卡片撑满高度，保证 Learn More 按钮对齐
+  height: 100%;
+
+  margin: 0 !important;
+}
+
+@media (max-width: $two) {
+  .grid {
+    --repeat: 2;
+  }
+}
+
+@media (max-width: $one) {
+  .grid {
+    --repeat: 1;
+  }
+}
+
+.grid[data-style="square"] {
+  align-items: center;
+
+  &>* {
+    aspect-ratio: 1 / 1.25;
+  }
+
+  & img {
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+    max-width: unset;
+    max-height: unset;
+  }
+}
+
+.grid> :where(h1, h2, h3, h4, h5, h6) {
+  display: none;
+}

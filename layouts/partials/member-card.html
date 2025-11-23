@@ -1,0 +1,70 @@
+{{/* 接收参数：Member Page Object */}}
+
+{{ $name := .Params.name | default .Title }}
+
+{{/* 描述逻辑 */}}
+{{ $desc := .Params.description | default .Params.job_title }}
+{{ if and .Params.job_title .Params.year }}
+{{ if or (eq .Params.group "student") (eq .Params.group "phd") }}
+{{ $desc = printf "%s %d" .Params.job_title .Params.year }}
+{{ end }}
+{{ end }}
+
+{{/* [修改点 1] 链接逻辑：移除 .Permalink 回退 */}}
+{{ $link := .Params.website | default .Params.home_url }}
+
+{{/* 图片处理 */}}
+{{ $avatar := .Params.image | default .Params.avatar | default "/images/fallback.svg" }}
+{{ $cleanAvatar := $avatar | replaceRE "^\\.\\./" "/" }}
+
+<div class="portrait-wrapper">
+
+    {{/* [修改点 2] 动态标签：有链接用 <a>，无链接用 <div> */}}
+            {{ if and $link (ne $link "") }}
+            <a href="{{ $link }}" class="portrait" aria-label="{{ $name }}">
+                {{ else }}
+                <div class="portrait">
+                    {{ end }}
+
+                    <img src="/images/loading.gif" data-src="{{ $cleanAvatar | relURL }}"
+                        class="portrait-image lazyload" alt="{{ $name }}" loading="lazy" onerror="this.src = '{{ "images/fallback.svg" | relURL }}'; this.onerror=null;">
+
+                    <div class="portrait-info">
+                        <span class="portrait-name">
+                            {{ $name }}
+                        </span>
+
+                        {{ if $desc }}
+                        <span class="portrait-description">
+                            {{ $desc | markdownify }}
+                        </span>
+                        {{ end }}
+<!-- 
+                        {{/* 社交链接 */}}
+                        {{ if .Params.links }}
+                        <div class="portrait-social">
+                            {{ range $key, $val := .Params.links }}
+                            {{ $icon := "fa-solid fa-link" }}
+                            {{ if eq $key "email" }}{{ $icon = "fa-solid fa-envelope" }}{{ end }}
+                            {{ if eq $key "orcid" }}{{ $icon = "fa-brands fa-orcid" }}{{ end }}
+                            {{ if eq $key "twitter" }}{{ $icon = "fa-brands fa-x-twitter" }}{{ end }}
+                            {{ if eq $key "github" }}{{ $icon = "fa-brands fa-github" }}{{ end }}
+
+                            {{ $href := $val }}
+                            {{ if eq $key "email" }}{{ $href = printf "mailto:%s" (replace $val "(AT)" "@") }}{{ end }}
+
+                            <span class="social-icon" title="{{ $key }}">
+                                <i class="{{ $icon }}"></i>
+                            </span>
+                            {{ end }}
+                        </div>
+                        {{ end }} -->
+                    </div>
+
+                    {{ if and $link (ne $link "") }}
+            </a>
+            {{ else }}
+        </div>
+        {{ end }}
+
+</div>

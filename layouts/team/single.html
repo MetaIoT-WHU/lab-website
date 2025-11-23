@@ -1,0 +1,128 @@
+{{ define "main" }}
+
+{{/* 1. 数据准备 */}}
+{{ $membersPage := site.GetPage "members" }}
+{{ $allMembers := $membersPage.Pages }}
+
+{{/* 2. Intro */}}
+{{ with .Params.intro }}
+<section class="background" data-size="page" {{ if .dark }}data-dark="true" {{ end }}>
+    <h1 id="team">
+        {{ if .icon }}<i class="icon {{ .icon }}"></i>{{ end }}
+        {{ .title }}
+    </h1>
+    {{ if .content }}<p>{{ .content }}</p>{{ end }}
+</section>
+{{ end }}
+
+{{/* --- Group 1: Supervisors --- */}}
+{{ $sups := where $allMembers "Params.group" "supervisor" }}
+{{ if gt (len $sups) 0 }}
+<section class="background" data-size="page">
+    <h2>Supervisors</h2>
+    {{/* [修改点] 增加 members-grid 类名 */}}
+    <div class="grid members-grid">
+        {{ range sort $sups "Params.weight" }}
+        {{ partial "member-card.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{/* --- Group 2: Faculty / Postdoc --- */}}
+{{ $faculty := where $allMembers "Params.group" "faculty" }}
+{{ if gt (len $faculty) 0 }}
+<section class="background" data-size="page">
+    <h2>RAP & Postdoc</h2>
+    <div class="grid members-grid">
+        {{ range sort $faculty "Params.year" "desc" }}
+        {{ partial "member-card.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{/* --- Group 3: PhD Students --- */}}
+{{ $students := where $allMembers "Params.group" "student" }}
+{{ $phds := where $students "Params.role" "PhD" }}
+
+{{ if gt (len $phds) 0 }}
+<section class="background" data-size="page">
+    <h2>PhD Students</h2>
+    <div class="grid members-grid">
+        {{/* [修改点] 将 desc 改为 asc (升序：年份小的在前) */}}
+        {{ range sort $phds "Params.year" "asc" }}
+        {{ partial "member-card.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{/* --- Group 4: Master Students --- */}}
+{{ $masters := where $students "Params.role" "Master" }}
+
+{{ if gt (len $masters) 0 }}
+<section class="background" data-size="page">
+    <h2>Master Students</h2>
+    <div class="grid members-grid">
+        {{/* [修改点] 将 desc 改为 asc */}}
+        {{ range sort $masters "Params.year" "asc" }}
+        {{ partial "member-card.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{/* --- Group 5: Undergrad Students --- */}}
+{{ $undergrads := where $students "Params.role" "Undergrad" }}
+{{ if gt (len $undergrads) 0 }}
+<section class="background" data-size="page">
+    <h2>Undergraduate Students</h2>
+    <div class="grid members-grid">
+        {{ range sort $undergrads "Params.year" "desc" }}
+        {{ partial "member-card.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{/* --- Group 6: Alumni --- */}}
+{{ $alumni := where $allMembers "Params.group" "alumni" }}
+{{ if gt (len $alumni) 0 }}
+<section class="background" data-size="page">
+    <h2>Alumni</h2>
+
+    {{ $alumniPhd := where $alumni "Params.role" "PhD" }}
+    {{ if gt (len $alumniPhd) 0 }}
+    <h3>PhD Student Alumni</h3>
+    <ul>{{ range sort $alumniPhd "Params.year" "desc" }}{{ partial "member-list-item.html" . }}{{ end }}</ul>
+    {{ end }}
+
+    {{ $alumniMaster := where $alumni "Params.role" "Master" }}
+    {{ if gt (len $alumniMaster) 0 }}
+    <h3>Master Student Alumni</h3>
+    <ul>{{ range sort $alumniMaster "Params.year" "desc" }}{{ partial "member-list-item.html" . }}{{ end }}</ul>
+    {{ end }}
+
+    {{/* 6.3 Undergraduate Alumni (从单个列表文件读取) */}}
+    {{/* 查找 group="alumni_list" 且 role="Undergrad" 的页面 */}}
+    {{ $ugListObj := where (where $allMembers "Params.group" "alumni_list") "Params.role" "Undergrad" | first 1 }}
+    
+    {{/* 如果找到了这个文件 */}}
+    {{ if gt (len $ugListObj) 0 }}
+    {{ $ugPage := index $ugListObj 0 }}
+    {{ if $ugPage.Params.members }}
+    <h3>Undergraduate Alumni</h3>
+    <ul>
+        {{/* 对 yaml 数据中的 members 数组按 year 降序排列 */}}
+        {{ range sort $ugPage.Params.members "year" "desc" }}
+        {{/* 调用升级后的兼容组件 */}}
+        {{ partial "member-list-item.html" . }}
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}
+
+{{ end }}

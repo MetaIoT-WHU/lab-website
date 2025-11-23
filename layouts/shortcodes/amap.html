@@ -1,0 +1,65 @@
+{{/* 接收参数：height */}}
+{{ $height := .Get "height" | default "400px" }}
+{{ $key := "41807eb51f8394f896372a25e2f5975f" }}
+
+<div id="map" style="width: 100%; height: {{ $height }}; margin: 20px 0; border-radius: 8px; overflow: hidden;"></div>
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key={{ $key }}"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var map = new AMap.Map('map', {
+            resizeEnable: true,
+            center: [114.357414, 30.535108],
+            zoom: 16
+        });
+
+        //创建 AMap.Icon 实例：
+        const icon = new AMap.Icon({
+            size: new AMap.Size(25, 34), //图标尺寸
+            image: "//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-red.png",
+            imageOffset: new AMap.Pixel(0, 0),
+            imageSize: new AMap.Size(25, 34),
+        });
+
+        var marker = new AMap.Marker({
+            position: map.getCenter(),
+            icon: icon,
+            anchor: 'bottom-center',
+            title: "Metaiot Lab",
+            offset: new AMap.Pixel(0, 0)
+        });
+
+        map.add(marker);
+
+        // 设置鼠标划过点标记显示的文字提示
+        marker.setTitle('Metaiot Lab');
+
+        // 设置label标签
+        marker.setLabel({
+            direction: 'right',
+            offset: new AMap.Pixel(10, 0),  //设置文本标注偏移量
+            content: "<div class='info'>Metaiot Lab</div>", //设置文本标注内容
+        });
+    });
+</script>
+
+{{/* 补充 info 样式 */}}
+<style>
+    .amap-marker-label {
+        border: 0;
+        background-color: transparent;
+    }
+
+    .info {
+        position: relative;
+        top: 0;
+        right: 0;
+        min-width: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 10px;
+        font-size: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>

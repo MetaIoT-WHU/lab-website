@@ -1,0 +1,184 @@
+
+/* 1. 外层容器 (.row) */
+.row {
+  display: grid;
+  gap: 40px;
+  margin-top: 20px;
+  width: 100%;
+  /* PC端强制一行4列 */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 响应式适配 */
+@media (max-width: 1100px) {
+  .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. 卡片主体 */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--background);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* 3. 图片区域 */
+.gallery-image {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}
+
+.gallery-image img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  /* 保持 3:2 */
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s, filter 0.3s;
+
+  &.lazyload {
+    filter: blur(5px);
+    opacity: 0.8;
+  }
+}
+
+/* 4. 文字区域 (核心修改) */
+.gallery-text {
+  /* [修改] 改为水平排列 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 允许长标题换行 */
+  align-items: baseline;
+  /* 让日期和标题的文字基线对齐 */
+  justify-content: center;
+
+  /* 间距控制 */
+  gap: 8px;
+  /* 日期和标题之间的距离 */
+  padding: 10px 20px;
+  /* 保持原本的内边距 */
+  width: 100%;
+}
+
+.gallery-text>* {
+  margin: 0 !important;
+}
+
+/* 日期样式 */
+.gallery-date {
+  font-size: 0.9rem;
+  color: #666;
+  /* 稍微淡一点，区分标题 */
+  white-space: nowrap;
+  /* 防止日期换行 */
+}
+
+/* 标题样式 */
+.gallery-title {
+  font-style: italic;
+  /* 保持斜体 */
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: var(--text-color, #333);
+}
+
+
+/* Viewer.js 样式补丁 (强制最高层级) */
+.viewer-container {
+  z-index: 2147483647 !important;
+  /* 这里的数字必须很大 */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* 确保背景是深色的 */
+}
+
+/* 修复可能被 global reset 影响的样式 */
+.viewer-toolbar ul,
+.viewer-navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* 去掉列表圆点 */
+}
+
+.viewer-toolbar li,
+.viewer-navbar li {
+  display: inline-block;
+}
+
+/* 1. 重置 UL 容器 */
+.viewer-toolbar>ul,
+.viewer-navbar>ul {
+  padding: 0 !important;
+  /* 去掉内边距 */
+  margin: 0 !important;
+  /* 去掉外边距 */
+  list-style: none !important;
+  /* 去掉列表圆点 */
+  display: flex !important;
+  /* 强制弹性布局，保证横向排列 */
+  justify-content: center;
+  /* 居中 */
+}
+
+/* 2. 重置 LI 列表项 */
+.viewer-toolbar>ul>li,
+.viewer-navbar>ul>li {
+  /* [核心修复] 抵消全局 li 的影响 */
+  padding: 0 !important;
+  /* 修复 padding-left: 10px */
+  margin: 0 1px !important;
+  /* 图标之间保留极小间距 */
+  text-align: center !important;
+  /* 修复 text-align: justify */
+  line-height: 1 !important;
+  /* 修复 line-height: var(--spacing) */
+
+  /* 布局修正 */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  /* 尺寸修正 (Viewer默认图标大小) */
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  /* 防止被压缩 */
+
+  background-color: transparent;
+  /* 防止背景色干扰 */
+  border-radius: 50%;
+  /* 如果你想让按钮点击背景变圆 */
+}
+
+/* 3. 修复图标本身 */
+.viewer-toolbar>ul>li::before {
+  margin: 0 !important;
+  /* 防止伪元素也有 margin */
+}

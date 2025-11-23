@@ -1,0 +1,31 @@
+{{/* 上下文可能是 Page 对象，也可能是 Map 数据 */}}
+
+{{ $name := "" }}
+{{ $website := "" }}
+{{ $description := "" }}
+
+{{ if .Params }}
+{{/* --- Case A: Hugo Page (PhD/Master Alumni) --- */}}
+{{ $name = .Params.name | default .Title }}
+{{/* [修改点] 移除 .Permalink 回退，严格尊重 website */}}
+{{ $website = .Params.website | default .Params.home_url }}
+{{ $description = .Params.description }}
+{{ else }}
+{{/* --- Case B: Map Data (Undergraduate Alumni List) --- */}}
+{{ $name = .name }}
+{{ $website = .website }}
+{{ $description = .description }}
+{{ end }}
+
+<li class="member-list-item">
+    {{/* 只有当 website 存在且不为空时，才渲染链接 */}}
+    {{ if and $website (ne $website "") }}
+    <a href="{{ $website }}" target="_blank">{{ $name }}</a>
+    {{ else }}
+    <strong>{{ $name }}</strong>
+    {{ end }}
+
+    {{ if $description }}
+    <span class="member-desc"> - {{ $description | markdownify }}</span>
+    {{ end }}
+</li>

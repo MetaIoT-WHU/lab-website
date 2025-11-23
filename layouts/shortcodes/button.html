@@ -1,0 +1,9 @@
+{{/* 这一步通常没问题，但为了保险请确认 */}}
+{{ partial "button.html" (dict
+"type" (.Get "type")
+"text" (.Get "text")
+"link" (.Get "link")
+"icon" (.Get "icon")
+"style" (.Get "style")
+"tooltip" (.Get "tooltip")
+) }}

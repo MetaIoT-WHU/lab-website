@@ -1,0 +1,11 @@
+{{/* 这是一个精简的列表项组件，用于 Alumni */}}
+{{ $name := .Params.name | default .Title }}
+{{ $desc := .Params.description }}
+{{ $url := .Params.home_url | default (index .Params "home-url") | default .Params.link | default .Permalink }}
+
+<li class="member-list-item">
+    <a href="{{ $url }}">{{ $name }}</a>
+    {{ if $desc }}
+    <span class="member-desc">{{ $desc | markdownify }}</span>
+    {{ end }}
+</li>

@@ -1,0 +1,35 @@
+{{/* 接收参数: dict "icon" "..." */}}
+{{ $icon := .icon }}
+
+{{ if $icon }}
+
+{{/* --- Case 1: SVG 文件 (尝试内联) --- */}}
+{{ if strings.HasSuffix $icon ".svg" }}
+<span class="icon-svg">
+    {{/* 尝试从 static 目录读取文件 */}}
+    {{ if fileExists (printf "static/%s" $icon) }}
+    {{ readFile (printf "static/%s" $icon) | safeHTML }}
+    {{ else if fileExists (printf "static/images/%s" $icon) }}
+    {{/* 容错：试试看是不是在 images 文件夹里 */}}
+    {{ readFile (printf "static/images/%s" $icon) | safeHTML }}
+    {{ else }}
+    {{/* 找不到文件，回退到 img 标签 */}}
+    <img src="{{ $icon | relURL }}" alt="icon" class="icon-img">
+    {{ end }}
+</span>
+
+{{/* --- Case 2: 图片文件 (.png, .jpg, .webp) --- */}}
+{{ else if or (strings.HasSuffix $icon ".png") (strings.HasSuffix $icon ".jpg") (strings.HasSuffix $icon ".webp") }}
+<span class="icon-img-wrapper">
+    <img src="{{ $icon | relURL }}" alt="icon" class="icon-img">
+</span>
+
+{{/* --- Case 3: FontAwesome 类名 (默认) --- */}}
+{{ else }}
+{{/* 如果传入的字符串包含空格 (如 "fa-solid fa-user")，直接用 */}}
+{{/* 如果只有 "envelope"，自动补全 "fa-solid fa-envelope" (可选优化，看你习惯) */}}
+
+<i class="icon {{ $icon }}"></i>
+{{ end }}
+
+{{ end }}

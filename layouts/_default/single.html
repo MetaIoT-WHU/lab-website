@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+{{/* 1. 渲染顶部 Intro 模块 */}}
+{{ with .Params.intro }}
+<section class="background" data-size="page" {{ if .dark }}data-dark="true" {{ end }} {{ if .background
+    }}style="--image: url('{{ .background | relURL }}')" {{ end }}>
+    <h1 id="{{ .title | urlize }}">
+        {{ if .icon }}
+        {{ partial "icon.html" (dict "icon" .icon) }}&nbsp;
+        {{ end }}
+        {{ .title }}
+    </h1>
+    {{ if .content }}<p>{{ .content | markdownify }}</p>{{ end }}
+</section>
+{{ end }}
+
+
+{{/* 2. 渲染 Page Builder (如果定义了 sections) */}}
+{{ if .Params.sections }}
+{{ partial "page-builder.html" . }}
+
+{{/* 3. 兜底逻辑：普通 Markdown 页面 (For Student 用这个) */}}
+{{ else }}
+<section class="background" data-size="page">
+
+    {{/* [核心修改] 只有当没有 intro 配置时，才在这里显示标题，防止重复 */}}
+    {{ if not .Params.intro }}
+    <h1>{{ .Title }}</h1>
+    {{ end }}
+
+    {{/* 渲染 Markdown 正文 */}}
+    {{ .Content }}
+
+</section>
+{{ end }}
+
+{{ end }}

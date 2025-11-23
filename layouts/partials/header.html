@@ -1,0 +1,54 @@
+{{/* --- 1. Header 背景图逻辑 --- */}}
+{{ $headerImage := .Params.header | default site.Params.header_image }}
+{{ $bgImage := $headerImage | relURL }}
+{{ $isDark := .Params.header_dark | default true }}
+
+{{/* --- 2. Logo 检测逻辑 (SVG > PNG > WebP) --- */}}
+{{ $logo := "" }}
+{{ $isSvg := false }}
+
+{{ if (fileExists "static/images/logo.svg") }}
+{{ $logo = "images/logo.svg" }}
+{{ $isSvg = true }}
+{{ else if (fileExists "static/images/logo.png") }}
+{{ $logo = "images/logo.png" }}
+{{ else if (fileExists "static/images/logo.webp") }}
+{{ $logo = "images/logo.webp" }}
+{{ end }}
+
+<header class="background" style="--image: url('{{ $bgImage }}')" {{ if or (eq $isDark true) (eq $isDark false) }}
+    data-dark="{{ $isDark }}" {{ end }} {{ if .IsHome }} data-big {{ end }}>
+    <a href="{{ site.Home.RelPermalink }}" class="home">
+        {{ if ne $logo "" }}
+        <span class="logo">
+            {{ if $isSvg }}
+            {{/* 直接读取 SVG 内容嵌入 */}}
+            {{ readFile (printf "static/%s" $logo) | safeHTML }}
+            {{ else }}
+            <img src="{{ $logo | relURL }}" alt="logo">
+            {{ end }} {{/* 修正点：这里原来写的是 endif */}}
+        </span>
+        {{ end }}
+
+        {{ if ne site.Params.logo_text false }}
+        <span class="title-text" data-tooltip="Home">
+            {{ if and site.Title (ne site.Params.show_title false) }}
+            <span class="title">{{ site.Title }}</span>
+            {{ end }}
+            {{ if and site.Params.subtitle (ne site.Params.show_subtitle false) }}
+            <span class="subtitle">{{ site.Params.subtitle }}</span>
+            {{ end }}
+        </span>
+        {{ end }}
+    </a>
+
+    <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+    <nav>
+        {{ range sort (where site.Pages "Params.nav" "ne" nil) "Params.nav.order" }}
+        <a href="{{ .RelPermalink }}" {{ if .Params.nav.tooltip }} data-tooltip="{{ .Params.nav.tooltip }}" {{ end }}>
+            {{ .Title }}
+        </a>
+        {{ end }}
+    </nav>
+</header>

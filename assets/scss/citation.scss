@@ -1,0 +1,210 @@
+/* =========================================
+   Citation Styles
+   字体：Poppins / Lora / Roboto Mono
+   排版：紧凑 (Low Line-height)
+   颜色：还原原版 (#f24022 等)
+   ========================================= */
+
+/* 变量定义 */
+$thumb-size: 180px;
+$wrap: 800px;
+
+/* 1. 容器 */
+.citation-container {
+  container-type: inline-size;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.citation {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  position: relative;
+}
+
+/* 2. 图片区域 */
+.citation-image {
+  position: relative;
+  width: $thumb-size;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.citation-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. 文字区域 */
+.citation-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 100%;
+
+  /* [核心修复] 极小的间距，解决“太松散”的问题 */
+  gap: 2px;
+
+  text-align: left;
+  z-index: 0;
+}
+
+/* 4. 水印图标 (还原原版颜色和位置) */
+.citation-text>.icon,
+.citation-text>.icon-svg,
+.citation-text>.icon-img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e0e0e0;
+  /* 原版浅灰色 */
+  opacity: 0.5;
+  /* 原版透明度 */
+  font-size: 2.5rem;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* =========================================
+   Typography & Colors (修复重点)
+   ========================================= */
+
+/* A. 标题行 */
+.citation_title {
+  width: 100%;
+  /* [核心修复] 紧凑行高 */
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+
+/* [颜色修复] 会议简写 */
+.shortPublisher {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #f24022;
+  /* [还原] 原始红色 */
+  margin-right: 4px;
+}
+
+/* 论文标题 */
+.citation-title {
+  // font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  /* 深黑色 */
+  text-decoration: none;
+}
+
+.citation-title:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* 奖项 */
+.citation_title span[style*="color:red"] {
+  font-family: Open Sans, sans-serif;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #d32f2f !important;
+  /* 鲜艳红 */
+}
+
+/* B. 作者名单 */
+.citation-authors {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  /* 深灰，比标题淡一点 */
+  line-height: 1.4;
+  /* 紧凑 */
+}
+
+.citation-authors u {
+  color: #0795d9;
+}
+
+/* 韦老师加粗 */
+.citation-authors b {
+  color: #0795d9;
+  font-weight: 600;
+}
+
+/* C. 出版详情 */
+.citation-details {
+  width: 100%;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  /* [还原] 标准灰色 */
+  line-height: 1.4;
+}
+
+/* =========================================
+   Buttons
+   ========================================= */
+
+.citation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+  /* 紧凑上边距 */
+}
+
+.btn-tiny {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7em;
+  /* 小巧 */
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #555;
+  background: #fff;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+@container (max-width: 800px) {
+  .citation {
+    flex-direction: column;
+  }
+
+  .citation-image {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .citation-text>.icon,
+  .citation-text>.icon-svg {
+    font-size: 2rem;
+    top: -5px;
+  }
+}
+

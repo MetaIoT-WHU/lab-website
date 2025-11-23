@@ -1,0 +1,41 @@
+{{/* 接收参数：Page Object (从 content/members 读取) */}}
+
+{{/* 1. 智能变量映射：适配你的数据结构 */}}
+{{ $name := .Params.name | default .Title }}
+{{ $desc := .Params.description | default .Params.job_title | default .Params.role }}
+{{ $image := .Params.image }}
+
+{{/* 2. 链接查找逻辑：按优先级查找 home-url > link > url > Permalink */}}
+{{ $url := .Params.home_url | default (index .Params "home-url") | default .Params.link | default .Permalink }}
+
+<div class="portrait-wrapper">
+    <a href="{{ $url | default " #" }}" class="portrait" aria-label="{{ $name }}">
+
+        {{/* 3. 图片处理 */}}
+        {{ if $image }}
+        {{/* 修正路径：移除开头的 ../ 以适配 Hugo relURL */}}
+        {{ $cleanImage := $image | replaceRE "^\\.\\./" "/" }}
+
+        <img src="/images/loading.gif" data-src="{{ $cleanImage | relURL }}" class="portrait-image lazyload"
+            alt="{{ $name }}" loading="lazy" onerror="this.src = '{{ " images/fallback.svg" | relURL }}';
+            this.onerror=null;">
+        {{ else }}
+        {{/* 默认头像 */}}
+        <img src="{{ " images/fallback.svg" | relURL }}" class="portrait-image" alt="fallback">
+        {{ end }}
+
+        {{/* 4. 信息展示 */}}
+        <div class="portrait-info">
+            <span class="portrait-name">
+                {{ $name }}
+            </span>
+
+            {{ if $desc }}
+            <span class="portrait-description">
+                {{ $desc | markdownify }}
+            </span>
+            {{ end }}
+        </div>
+
+    </a>
+</div>

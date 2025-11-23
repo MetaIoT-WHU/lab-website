@@ -1,0 +1,75 @@
+<div class="search-ui">
+    <div class="search-box">
+        <input type="text" class="search-input" id="site-search" placeholder="Search items on this page"
+            oninput="filterCitations()">
+        <button disabled data-tooltip="Search" aria-label="search">
+            <i class="icon fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    {{ if .filters }}
+    <div style="margin-top: 1rem; display: flex; gap: 10px; flex-wrap: wrap;">
+
+        <div class="button-wrapper">
+            <a class="button active-filter" href="javascript:void(0)" onclick="filterType('all', this)"
+                data-tooltip="Show All">
+                <i class="icon fa-solid fa-layer-group"></i>
+                <span>All</span>
+            </a>
+        </div>
+
+        {{ range .filters }}
+        <div class="button-wrapper">
+            <a class="button" href="javascript:void(0)" onclick="filterType('{{ .value }}', this)"
+                data-tooltip="{{ .name }}">
+                <i class="icon {{ if eq .value " journal" }}fa-regular fa-newspaper{{ else }}fa-regular
+                    fa-file-powerpoint{{ end }}"></i>
+                <span>{{ .name }}</span>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="search-info"></div>
+</div>
+
+<script>
+    var currentFilterType = 'all';
+
+    function filterType(type, element) {
+        currentFilterType = type;
+
+        // 样式切换 (这里可能需要根据你的 CSS 微调，暂时用简单的 class 切换)
+        // 如果你有专门的 active class for button，可以在这里添加
+
+        // 触发筛选
+        filterCitations();
+    }
+
+    function filterCitations() {
+        const query = document.getElementById('site-search').value.toLowerCase();
+        const items = document.querySelectorAll('.citation-container'); // 注意这里改成了 citation-container
+        let count = 0;
+
+        items.forEach(item => {
+            const text = (item.dataset.title + " " + item.dataset.authors + " " + item.dataset.year).toLowerCase();
+            const matchesSearch = text.includes(query);
+            const type = item.dataset.type;
+            const matchesType = (currentFilterType === 'all') || (type === currentFilterType);
+
+            if (matchesSearch && matchesType) {
+                item.style.display = '';
+                count++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // 隐藏空的年份标题 (高级优化)
+        document.querySelectorAll('h3').forEach(h3 => {
+            // 这是一个简单的检查，检查该年份标题后紧跟的元素是否可见
+            // 实际 DOM 操作可能更复杂，但暂时先保证列表筛选正常
+        });
+    }
+</script>

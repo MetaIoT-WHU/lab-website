@@ -1,0 +1,717 @@
+# - id: doi:10.1371/journal.pcbi.1007128
+#   title: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+#   type: paper
+#   co-author: true
+#   description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#   date: 2020-12-04
+#   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+  # buttons:
+  #   - type: docs
+  #     text: PDF
+  #     link: https://metaiot.group/publication/paper/mobicom24-GPSense.pdf
+  #   - type: slides
+  #     text: SLIDES
+  #     link: /publication/slides/MobiCom2024_GPSense_slides.pdf
+  #   - type: video
+  #     text: VIDEO
+  #     link: https://cdn.metaiot.group/metaiot/video/Mobicom24Demo.mp4
+#     - type: website
+#       text: WEBSITE
+#       link: http://manubot.org/
+#   tags:
+#     - open science
+#     - collaboration
+#   repo: greenelab/meta-review
+
+# #############################################################
+# ########################### 2026 ############################
+# #############################################################
+
+
+
+
+# #############################################################
+# ########################### 2025 ############################
+# #############################################################
+
+# 2025 Mitigating Interference for Automotive Millimeter-wave Radar Perception in Dense Traffic Scenarios
+- id: doi:10.1109/tmc.2025.3610963
+  type: journal
+  shortPublisher: IEEE TMC'25
+
+# GPSoil: Towards low-cost soil moisture sensing using GNSS signals
+- url: https://metaiot.group/publication/paper/10.1212.xxxx
+  type: conference
+  title: 'GPSoil: Towards low-cost soil moisture sensing using GNSS signals'
+  co-author: true
+  highlight: true
+  date: 2025-11-22
+  authors:
+    - Huixin Dong
+    - Jingqi Lin
+    - Minhao Cui
+    - Serene Zhang
+    - Lili Qiu
+    - Jie Xiong
+    - Wei Wang
+  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
+    and Networking
+  shortPublisher: ACM MobiCom'25
+  # buttons:
+  #   - type: docs
+  #     text: PDF
+  #     link: https://arxiv.org/pdf/2503.11490
+  tags:
+    - GPS Sensing
+
+# SE: Self-Supervised State Estimation for Radar-Inertial System
+- url: https://iccv.thecvf.com/virtual/2025/poster/2131
+  type: conference
+  title: 'S^3E: Self-Supervised State Estimation for Radar-Inertial System'
+  co-author: true
+  highlight: true
+  date: 2025-10-22
+  authors:
+    - Shengpeng Wang
+    - Yulong Xie
+    - Qing Liao
+    - Wei Wang
+  publisher: International Conference on Computer Vision, ICCV 2025
+  shortPublisher: ICCV'25
+  # buttons:
+  #   - type: docs
+  #     text: PDF
+  #     link: https://arxiv.org/abs/2506.16936
+  tags:
+    - mmWave Radar
+    - ICCV
+
+# SDDiff: Boost Radar Perception via Spatial-Doppler Diffusion
+- url: https://metaiot.group/publication/paper/10.1100.xxxx
+  type: conference
+  title: 'SDDiff: Boost Radar Perception via Spatial-Doppler Diffusion'
+  co-author: true
+  highlight: true
+  date: 2025-08-23
+  authors:
+    - Shengpeng Wang
+    - Xin Luo
+    - Yulong Xie
+    - Wei Wang
+  publisher: Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence
+  shortPublisher: IJCAI'25
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://arxiv.org/abs/2506.16936
+  tags:
+    - mmWave Radar
+
+# PassiveBLE: Towards Fully Commodity-Compatible BLE Backscatter
+- url: https://metaiot.group/publication/paper/10.1125.xxxx
+  type: conference
+  title: 'PassiveBLE: Towards Fully Commodity-Compatible BLE Backscatter'
+  co-author: true
+  highlight: true
+  date: 2025-11-22
+  authors:
+    - Huixin Dong
+    - Yijie Wu
+    - Feiyu Li
+    - Wei Kuang
+    - Yuan He
+    - Qian Zhang
+    - Wei Wang
+  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
+    and Networking
+  shortPublisher: ACM MobiCom'25
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://arxiv.org/pdf/2503.11490
+  tags:
+    - BLE Backscatter
+
+# PDStream: Slashing Long-Tail Delay in Interactive Video
+- url: https://metaiot.group/publication/paper/10.1145.xxx
+  type: conference
+  title: 'PDStream: Slashing Long-Tail Delay in Interactive Video Streaming via Pseudo-Dua Streaming'
+  co-author: true
+  date: 2025-05-22
+  authors:
+    - Xuedou Xiao
+    - Yingying Zuo
+    - Mingxuan Yan
+    - Kezhong Liu
+    - Wei Wang
+  publisher: IEEE Conference on Computer Communications
+  shortPublisher: IEEE INFOCOM'25
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://www.arxiv.org/abs/2502.04691
+  tags:
+    - Video Streaming
+
+# Improving Multi-Vehicle Perception Fusion with Millimeter-Wave Radar Assistance
+- url: https://metaiot.group/publication/paper/10.1145/3636534.xxx
+  type: conference
+  title: 'Improving Multi-Vehicle Perception Fusion with Millimeter-Wave Radar Assistance'
+  co-author: true
+  date: 2025-05-22
+  authors:
+    - Zhiqing Luo
+    - Yi Wang
+    - Yingying He
+    - Wei Wang
+  publisher: IEEE Conference on Computer Communications
+  shortPublisher: IEEE INFOCOM'25
+  tags:
+    - Cooperative Perception
+
+  # 2024 Accurate Indoor Localization for Bluetooth Low Energy Backscatter
+- id: doi:10.1109/JIOT.2024.3468428
+  type: journal
+  co-author: true
+  shortPublisher: IEEE IOTJ'25
+
+# #############################################################
+# ########################### 2024 ############################
+# #############################################################
+
+
+# Fairness-Aware Two-Stage Hybrid Sensing Method in Vehicular Crowdsensing
+- id: doi:10.1109/TMC.2024.3408751
+  type: journal
+  shortPublisher: IEEE TMC'24
+
+# Robust Metric Localization in Autonomous Driving via Doppler Compensation With Single-Chip Radar
+- id: doi:10.1109/TITS.2023.3305487
+  type: journal
+  shortPublisher: IEEE TITS'24
+
+# Task-Oriented Video Compressive Streaming for Real-time Semantic Segmentation
+- id: doi:10.1109/TMC.2024.3446185
+  type: journal
+  co-author: true
+  shortPublisher: IEEE TMC'24
+  tags:
+    - Segmentation
+    - Video Streaming
+
+# GPSense: Passive Sensing with Pervasive GPS Signals
+- id: doi:10.1145/3636534.3690674
+  type: conference
+  co-author: true
+  highlight: true
+  shortPublisher: ACM MobiCom'24
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://metaiot.group/publication/paper/mobicom24-GPSense.pdf
+    - type: slides
+      text: SLIDES
+      link: /publication/slides/MobiCom2024_GPSense_slides.pdf
+    - type: video
+      text: VIDEO
+      link: https://cdn.metaiot.group/metaiot/video/Mobicom24Demo.mp4
+  tags:
+    - GPS Sensing
+  
+# A Unified Tunnel-diode Based Low Power Signal Waveform Transform Hardware for RF Computing
+- id: doi:10.1145/3698386.3699993
+  type: conference
+  co-author: true
+  shortPublisher: ACM RFCom'24
+  tags:
+    - RF Computing
+    - Best Paper Award
+
+
+# #############################################################
+# ########################### 2023 ############################
+# #############################################################
+
+- id: doi:10.1145/3570361.3592511
+  title: 'GPSMirror: Expanding Accurate GPS Positioning to Shadowed and Indoor Regions with Backscatter'
+  type: conference
+  shortPublisher: ACM MobiCom'23
+  co-author: true
+  highlight: true
+  date: 2023-6-10
+  image: https://www.catalyzex.com/_next/image?url=https%3A%2F%2Fd3i71xaburhd42.cloudfront.net%2F531429cc78035c2fc43560d8a7dd09d93fd8b201%2F2-Figure1-1.png&w=384&q=75
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://arxiv.org/pdf/2304.07572
+    - type: slides
+      text: SLIDES
+      link: /publication/slides/DongGPSMirror.pdf
+  tags:
+    - Backscatter Network
+    - GPS Sensing
+
+# Think before You Leap: Content-Aware Low-Cost Edge-Assisted Video Semantic Segmentation
+- id: doi:10.1145/3581783.3613808
+  co-author: true
+  type: conference
+  shortPublisher: ACM MM'23
+
+# From Ember to Blaze: Swift Interactive Video Adaptation via Meta-Reinforcement Learning
+- id: 10.1109/INFOCOM53939.2023.10228909
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'23
+
+# FedGR: Federated Learning with Gravitation Regulation for Double Imbalance Distribution
+- id: doi:10.1007/978-3-031-30637-2_47
+  type: conference
+  shortPublisher: DASFAA'23
+
+# Non-intrusive Anomaly Detection of Industrial Robot Operations by Exploiting Nonlinear Effect
+- id: doi:10.1145/3569477
+  co-author: true
+  type: journal
+  shortPublisher: ACM UbiComp'22
+
+  # 2022 InFit: Combination Movement Recognition for Intensive Fitness Assistant via Wi-Fi
+- id: doi:10.1109/TMC.2022.3209656
+  type: journal
+  shortPublisher: IEEE TMC'22
+
+# 2022 Delay-Aware Cooperative Task Offloading for Multi-UAV Enabled Edge-Cloud Computing
+- id: doi:10.1109/TMC.2022.3232375                                                                            
+  type: journal
+  shortPublisher: IEEE TMC'22
+
+
+
+# #############################################################
+# ########################### 2022 ############################
+# #############################################################
+
+
+# 2020 LoRadar: Enabling Concurrent Radar Sensing and LoRa Communication
+- id: doi:10.1109/TMC.2020.3035797
+  type: journal
+  shortPublisher: IEEE TMC'22
+
+  # 2022 Covert Communication With Uninformed Backscatters in Hybrid Active/Passive Wireless Networks: Modeling and Performance Analysis
+- id: doi:10.1109/TCOMM.2022.3147791
+  type: journal
+  shortPublisher: IEEE TCOMM'22
+
+  # 2021 Single-Antenna Device-to-Device Localization in Smart Environments With Backscatter
+- id: doi:10.1109/JIOT.2021.3121794
+  co-author: true
+  type: conference
+  shortPublisher: IEEE IOTJ'22
+
+# 2021 LoRa Backscatter Assisted State Estimator for Micro Aerial Vehicles With Online Initialization
+- id: doi:10.1109/TMC.2021.3063850
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'21
+
+# 2021 Securing IoT Devices by Exploiting Backscatter Propagation Signatures
+- id: doi:10.1109/TMC.2021.3084754
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'22
+
+# 2022 Exploiting Channel Polarization for Reliable Wide-Area Backscatter Networks
+- id: doi:10.1109/TMC.2021.3075549
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'22
+
+# 2021 Forgery Attack Detection in Surveillance Video Streams Using Wi-Fi Channel State Information
+- id: doi:10.1109/TWC.2021.3129188
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'22
+
+# 2021 Sensor-Assisted Rate Adaptation for UAV MU-MIMO Networks
+- id: doi:10.1109/TNET.2021.3136911
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TON'22
+ 
+# 2022 DC-Loc: Accurate Automotive Radar Based Metric Localization with Explicit Doppler Compensation
+- id: doi:10.1109/ICRA46639.2022.9811561 
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICRA'22
+
+# DNN-Driven Compressive Offloading for Edge-Assisted Semantic Video Segmentation
+- id: doi:10.1109/INFOCOM48880.2022.9796657
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'22
+
+
+# #############################################################
+# ########################### 2021 ############################
+# #############################################################
+
+# 2021 RepChain: A Reputation-Based Secure, Fast, and High Incentive Blockchain System via Sharding
+- id: doi:10.1109/JIOT.2020.3028449
+  type: conference
+  shortPublisher: IEEE IOTJ'21
+
+# Wi-Fi-Inertial Indoor Pose Estimation for Microaerial Vehicles
+- id: doi:10.1109/TIE.2020.2984457
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TIE'21
+
+# Joint Energy Harvest and Information Transfer for Energy Beamforming in Backscatter Multiuser Networks
+- id: doi:10.1109/TCOMM.2020.3036049
+  date: 2021-02-01
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TCOMM'21
+
+# 2021 Detecting Colluding Sybil Attackers in Robotic Networks Using Backscatters
+- id: doi:10.1109/TNET.2020.3048126
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TON'21
+
+# Towards Cross-Modal Forgery Detection and Localization on Live Surveillance Videos
+- id: doi:10.1109/INFOCOM42981.2021.9488798
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'21
+
+# Conquering Textureless with RF-referenced Monocular Vision for MAV State Estimation
+- id: doi:10.1109/ICRA48506.2021.9560744
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICRA'21
+
+
+
+# #############################################################
+# ########################### 2020 ############################
+# #############################################################
+
+
+# FreeScatter: Enabling Concurrent Backscatter Communication Using Antenna Arrays
+- id: doi:10.1109/JIOT.2020.2984877
+  type: conference
+  shortPublisher: IEEE IOTJ'20
+
+# 2019 Incentive Mechanism for Cooperative Scalable Video Coding (SVC) Multicast Based on Contract Theory
+- id: doi:10.1109/TMM.2019.2929965
+  type: conference
+  shortPublisher: IEEE TMM'20
+
+# 2019 Joint C-OMA and C-NOMA Wireless Backhaul Scheduling in Heterogeneous Ultra Dense Networks
+- id: doi:10.1109/TWC.2019.2949791
+  type: conference
+  shortPublisher: IEEE TWC'20
+
+# 2020 Securing Channel State Information in Multiuser MIMO With Limited Feedback
+- id: doi:10.1109/TWC.2020.2970412
+  type: conference
+  shortPublisher: IEEE TWC'20
+
+# A Two-Stage Game Framework to Secure Transmission in Two-Tier UAV Networks
+- id: doi:10.1109/TVT.2020.3026184
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TVT'20
+
+# EchoFace: Acoustic Sensor-Based Media Attack Detection for Face Authentication
+- id: doi:10.1109/JIOT.2019.2959203
+  co-author: true
+  type: conference
+  shortPublisher: IEEE IOTJ'20
+
+# Peer-to-Peer Localization for Single-Antenna Devices
+- id: doi:10.1145/3411833
+  co-author: true
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'20
+
+# State-Aware Rate Adaptation for UAVs by Incorporating On-Board Sensors
+- id: doi:10.1109/TVT.2019.2950285
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TVT'20
+
+# Authenticating On-Body IoT Devices: An Adversarial Learning Approach
+- id: doi:10.1109/TWC.2020.2991111
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'20
+
+# Robot-Assisted Backscatter Localization for IoT Applications
+- id: doi:10.1109/TWC.2020.2997393
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'20
+
+# Sensor-Augmented Neural Adaptive Bitrate Video Streaming on UAVs
+- id: doi:10.1109/TMM.2019.2945167
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMM'20
+
+# 2020 Enabling Low-Power OFDM for IoT by Exploiting Asymmetric Clock Rates
+- id: doi:10.1109/TNET.2020.2966112
+  type: conference
+  shortPublisher: IEEE TON'20
+
+# ECGadv: Generating Adversarial Electrocardiogram to Misguide Arrhythmia Classification System
+- id: doi:10.1609/aaai.v34i04.5748
+  type: conference
+  shortPublisher: AAAI'20
+
+# Lightweight Sybil-Resilient Multi-Robot Networks by Multipath Manipulation
+- id: doi:10.1109/INFOCOM41043.2020.9155244
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+
+# Reliable Wide-Area Backscatter via Channel Polarization
+- id: doi:10.1109/INFOCOM41043.2020.9155391
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+
+# RF Backscatter-based State Estimation for Micro Aerial Vehicles
+- id: doi:10.1109/INFOCOM41043.2020.9155463
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+
+
+
+# #############################################################
+# ########################### 2019 ############################
+# #############################################################
+
+
+# Caching transient data for Internet of Things: A deep reinforcement learning approach
+- id: doi:10.1109/JIOT.2018.2882583
+  type: journal
+  shortPublisher: IEEE IOTJ'19
+
+# Cross-Technology Communications for Heterogeneous IoT Devices Through Artificial Doppler Shifts
+- id: doi:10.1109/TWC.2018.2883443
+  type: conference
+  shortPublisher: IEEE TWC'19
+
+# Energy Beamforming for Wireless Information and Power Transfer in Backscatter Multiuser Networks
+- id: doi:10.1109/GLOBECOM38437.2019.9013912
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+
+# Spatial Modulation for Ambient Backscatter Communications: Modeling and Analysis
+- id: doi:10.1109/GLOBECOM38437.2019.9013382
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+
+# Localizing Backscatters by a Single Robot with Zero Start-Up Cost
+- id: doi:10.1109/GLOBECOM38437.2019.9013768
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+
+# Towards Motion Invariant Authentication for On-Body IoT Devices
+- id: doi:10.1109/ICC.2019.8761982
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICC'19
+
+
+
+# #############################################################
+# ########################### 2018 ############################
+# #############################################################
+
+# Wins: Wifi-inertial indoor state estimation for mavs
+- id: doi:10.1145/3274783.3275157
+  title: 'Wins: Wifi-inertial indoor state estimation for mavs'
+  co-author: true
+  type: conference
+  shortPublisher: ACM SenSys'18
+
+# Rainbow: Preventing Mobile-Camera-based Piracy in the Physical World
+- id: doi:10.1109/INFOCOM.2018.8485881
+  title: 'Rainbow: Preventing Mobile-Camera-based Piracy in the Physical World'
+  type: conference
+  shortPublisher: IEEE INFOCOM'18
+
+# On secure transmission design: An information leakage perspective
+- id: doi:10.1109/GLOCOM.2018.8648032
+  title: 'On secure transmission design: An information leakage perspective'
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'18
+
+# ShieldScatter: Improving IoT security with backscatter assistance
+- id: doi:10.1145/3274783.3274841
+  title: 'ShieldScatter: Improving IoT security with backscatter assistance'
+  co-author: true
+  type: conference
+  shortPublisher: ACM SenSys'18
+
+# Wi-Fi Teeter-Totter: Overclocking OFDM for Internet of Things
+- id: doi:10.1109/INFOCOM.2018.8486233
+  type: conference
+  shortPublisher: IEEE INFOCOM'18
+
+# Toward battery-free wearable devices: The synergy between two feet
+- id: doi:10.1145/3185503
+  title: 'Toward battery-free wearable devices: The synergy between two feet'
+  type: journal
+  shortPublisher: ACM TCPS'18
+
+
+# NALoc: Nonlinear ambient-light-sensor-based localization system
+- id: doi:10.1145/3287077
+  title: 'NALoc: Nonlinear ambient-light-sensor-based localization system'
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'18
+
+# Nonlinear-precoded multiuser secure transmission with cooperative jamming and adaptive limited feedback
+- id: doi:10.1109/TVT.2018.2864178
+  co-author: true
+  type: journal
+  shortPublisher: IEEE TVT'18
+
+# Authenticating on-body backscatter by exploiting propagation signatures
+- id: doi:10.1145/3266002
+  co-author: true
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'18
+
+# Toward cross-layer design for non-orthogonal multiple access: A quality-of-experience perspective
+- id: doi:10.1109/MWC.2018.1700081
+  title: 'Toward cross-layer design for non-orthogonal multiple access: A quality-of-experience perspective'
+  type: journal
+  shortPublisher: IEEE TWC'18
+
+# Resonance-based secure pairing for wearables
+- id: doi:10.1109/TMC.2018.2809736
+  type: journal
+  shortPublisher: IEEE TMC'18
+
+# Securing on-body IoT devices by exploiting creeping wave propagation
+- id: doi:10.1109/JSAC.2018.2824939
+  type: journal
+  shortPublisher: IEEE JSAC'18
+
+
+
+# #############################################################
+# ########################### 2017 ############################
+# #############################################################
+
+# Personalized user engagement modeling for mobile videos
+- id: doi:10.1016/j.comnet.2017.07.012
+  type: journal
+  shortPublisher: Computer Networks'17
+
+# Your glasses know your diet: Dietary monitoring using electromyography sensors
+- id: doi:10.1109/JIOT.2017.2656151
+  title: 'Your glasses know your diet: Dietary monitoring using electromyography sensors'
+  type: journal
+  shortPublisher: IEEE IOTJ'17
+
+# 2016 Wideband spectrum adaptation without coordination
+- id: doi:10.1109/TMC.2016.2538225
+  type: journal
+  shortPublisher: IEEE TMC'17
+
+# 2017 Sampleless wi-fi: Bringing low power to wi-fi communications
+- id: doi:10.1109/TNET.2016.2643160
+  type: journal
+  shortPublisher: IEEE TON'17
+
+# Detecting on-body devices through creeping wave propagation
+- id: doi:10.1109/INFOCOM.2017.8057207
+  type: conference
+  shortPublisher: IEEE INFOCOM'17
+
+
+# #############################################################
+# ########################### 2016 ############################
+# #############################################################
+
+# VibID: User identification through bio-vibrometry
+- id: doi:10.1109/IPSN.2016.7460725
+  type: conference
+  shortPublisher: IEEE IPSN'16
+
+# Secret from muscle: Enabling secure pairing with electromyography
+- id: doi:10.1145/2994551.2994556
+  title: 'Secret from muscle: Enabling secure pairing with electromyography'
+  type: conference
+  shortPublisher: ACM SenSys'16
+
+# Apps on the move: A fine-grained analysis of usage behavior of mobile apps
+- id: doi:10.1109/INFOCOM.2016.7524464
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+
+# Battery-free sensing platform for wearable devices: The synergy between two feet
+- id: doi:10.1109/INFOCOM.2016.7524543
+  title: 'Battery-free sensing platform for wearable devices: The synergy between two feet'
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+
+# Managing channel bonding with clear channel assessment in 802.11 networks
+- id: doi:10.1109/ICC.2016.7511455
+  type: conference
+  shortPublisher: IEEE ICC'16
+
+# From rateless to sampleless: Wi-Fi connectivity made energy efficient
+- id: doi:10.1109/INFOCOM.2016.7524424
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+  
+# Touch-and-guard: secure pairing through hand resonance
+- id: doi:10.1145/2971648.2971688
+  title: 'Touch-and-guard: secure pairing through hand resonance'
+  type: conference
+  shortPublisher: ACM UbiComp'16
+
+# Privacy-Preserving Location Authentication in Wi-Fi Networks Using Fine-Grained Physical Layer Signatures
+- id: doi:10.1109/TWC.2015.2487453
+  type: journal
+  shortPublisher: IEEE TWC'16
+
+# Less Transmissions, More Throughput: Bringing Carpool to Public WLANs
+- id: doi:10.1109/TMC.2015.2449291
+  type: journal
+  shortPublisher: IEEE TMC'16
+
+# 2016 Privacy preservation for context sensing on smartphone
+- id: doi:10.1109/TNET.2015.2512301
+  type: journal
+  shortPublisher: IEEE TON'16  
+
+
+
+
+
+# ###########################################################################################################################
+# ###############################################                  ##########################################################
+# ###############################################       Books      ##########################################################
+# ###############################################                  ##########################################################
+# ###########################################################################################################################
+
+## Books
+
+# Long-Term Quality of Protection Wei Wang, Tao Jiang, Qian Zhang  in Encyclopedia of Wireless Networks, Edited by Sherman Shen, Xiaodong Lin, Kuan Zhang, Springer, 2018. (DOI:10.1007/978-3-319-32903-1_50-1)
+- id: doi:10.1007/978-3-319-32903-1_50-1
+  type: book
+  publisher: Encyclopedia of Wireless Networks
+  shortPublisher: Springer
+

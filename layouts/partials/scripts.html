@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+{{/* 1. 匹配 assets/js/ 下的所有 .js 文件
+相当于 Jekyll 的 site.static_files | where ...
+*/}}
+{{ $scripts := resources.Match "js/*.js" }}
+
+{{/* 2. 遍历并加载
+注意：Hugo Pipes 会按文件名排序加载。
+如果你有依赖关系（比如 jquery 必须先加载），
+可能需要手动指定顺序，但目前我们先保持原样逻辑。
+*/}}
+{{ range $scripts }}
+{{/* 开发环境下 (hugo server) 直接加载
+生产环境下 (hugo) 进行压缩 (Minify) 和指纹处理 (Fingerprint)
+*/}}
+{{ if eq hugo.Environment "development" }}
+<script src="{{ .RelPermalink }}"></script>
+{{ else }}
+{{ $secureJS := . | minify | fingerprint }}
+<script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+{{ end }}
+{{ end }}

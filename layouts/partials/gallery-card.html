@@ -1,0 +1,21 @@
+{{/* 接收参数：Gallery Event Object (from yaml) */}}
+
+<div class="gallery" data-style="">
+    {{/* 图片区域：点击触发 Viewer.js */}}
+    <a aria-label="{{ .title }}" class="gallery-image">
+        {{/* 获取第一张图片作为封面 */}}
+        {{ $cover := index .images 0 }}
+        {{ if $cover }}
+        <img class="lazyload" src="/images/loading.gif" data-src="{{ $cover | relURL }}" alt="{{ .title }}"
+            loading="lazy" onerror="this.src = '{{ " images/fallback.svg" | relURL }}'; this.onerror=null;">
+        {{ end }}
+    </a>
+
+    {{/* 文字区域 */}}
+    <div class="gallery-text">
+        {{ if .date }}
+        <a class="gallery-date">{{ .date | dateFormat "2006-01-02" }}</a>
+        {{ end }}
+        <span class="gallery-title">{{ .title }}</span>
+    </div>
+</div>

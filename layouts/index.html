@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{/* Intro 单独处理 */}}
+{{ with .Params.intro }}
+<section class="background" data-size="page" {{ if .dark }}data-dark="true" {{ end }} {{ if .background
+    }}style="--image: url('{{ .background | relURL }}')" {{ end }}>
+    <h1 id="metaiot-lab">{{ .title }}</h1>
+    <p>{{ .content | markdownify }}</p>
+</section>
+{{ end }}
+
+{{/* 调用通用构建器 */}}
+{{ partial "page-builder.html" . }}
+{{ end }}

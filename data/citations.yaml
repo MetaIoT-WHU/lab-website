@@ -1,0 +1,1411 @@
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: doi:10.1109/tmc.2025.3610963
+  title: Mitigating Interference for Automotive Millimeter-wave Radar Perception in
+    Dense Traffic Scenarios
+  authors:
+  - Wei Wang
+  - Chunshen Li
+  - Bixin Zeng
+  - Lieke Chen
+  - Liang Sun
+  - Kai Luo
+  - Da Chen
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2025-01-01'
+  link: https://doi.org/g987sm
+  type: journal
+  shortPublisher: IEEE TMC'25
+  plugin: sources.py
+  file: sources.yaml
+- url: https://metaiot.group/publication/paper/10.1212.xxxx
+  type: conference
+  title: 'GPSoil: Towards low-cost soil moisture sensing using GNSS signals'
+  co-author: true
+  highlight: true
+  date: '2025-11-22'
+  authors:
+  - Huixin Dong
+  - Jingqi Lin
+  - Minhao Cui
+  - Serene Zhang
+  - Lili Qiu
+  - Jie Xiong
+  - Wei Wang
+  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
+    and Networking
+  shortPublisher: ACM MobiCom'25
+  tags:
+  - GPS Sensing
+  plugin: sources.py
+  file: sources.yaml
+- url: https://iccv.thecvf.com/virtual/2025/poster/2131
+  type: conference
+  title: 'S^3E: Self-Supervised State Estimation for Radar-Inertial System'
+  co-author: true
+  highlight: true
+  date: '2025-10-22'
+  authors:
+  - Shengpeng Wang
+  - Yulong Xie
+  - Qing Liao
+  - Wei Wang
+  publisher: International Conference on Computer Vision, ICCV 2025
+  shortPublisher: ICCV'25
+  tags:
+  - mmWave Radar
+  - ICCV
+  plugin: sources.py
+  file: sources.yaml
+- url: https://metaiot.group/publication/paper/10.1100.xxxx
+  type: conference
+  title: 'SDDiff: Boost Radar Perception via Spatial-Doppler Diffusion'
+  co-author: true
+  date: '2025-08-23'
+  authors:
+  - Shengpeng Wang
+  - Xin Luo
+  - Yulong Xie
+  - Wei Wang
+  publisher: Proceedings of the Thirty-Fourth International Joint Conference on Artificial
+    Intelligence
+  shortPublisher: IJCAI'25
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/abs/2506.16936
+  tags:
+  - mmWave Radar
+  plugin: sources.py
+  file: sources.yaml
+- url: https://metaiot.group/publication/paper/10.1125.xxxx
+  type: conference
+  title: 'PassiveBLE: Towards Fully Commodity-Compatible BLE Backscatter'
+  co-author: true
+  highlight: true
+  date: '2025-11-22'
+  authors:
+  - Huixin Dong
+  - Yijie Wu
+  - Feiyu Li
+  - Wei Kuang
+  - Yuan He
+  - Qian Zhang
+  - Wei Wang
+  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
+    and Networking
+  shortPublisher: ACM MobiCom'25
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/pdf/2503.11490
+  tags:
+  - BLE Backscatter
+  plugin: sources.py
+  file: sources.yaml
+- url: https://metaiot.group/publication/paper/10.1145.xxx
+  type: conference
+  title: 'PDStream: Slashing Long-Tail Delay in Interactive Video Streaming via Pseudo-Dua
+    Streaming'
+  co-author: true
+  date: '2025-05-22'
+  authors:
+  - Xuedou Xiao
+  - Yingying Zuo
+  - Mingxuan Yan
+  - Kezhong Liu
+  - Wei Wang
+  publisher: IEEE Conference on Computer Communications
+  shortPublisher: IEEE INFOCOM'25
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://www.arxiv.org/abs/2502.04691
+  tags:
+  - Video Streaming
+  plugin: sources.py
+  file: sources.yaml
+- url: https://metaiot.group/publication/paper/10.1145/3636534.xxx
+  type: conference
+  title: Improving Multi-Vehicle Perception Fusion with Millimeter-Wave Radar Assistance
+  co-author: true
+  date: '2025-05-22'
+  authors:
+  - Zhiqing Luo
+  - Yi Wang
+  - Yingying He
+  - Wei Wang
+  publisher: IEEE Conference on Computer Communications
+  shortPublisher: IEEE INFOCOM'25
+  tags:
+  - Cooperative Perception
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2024.3468428
+  title: Accurate Indoor Localization for Bluetooth Low Energy Backscatter
+  authors:
+  - Zhiqing Luo
+  - Weiming Li
+  - Yijie Wu
+  - Huixin Dong
+  - Luanjian Bian
+  - Wei Wang
+  publisher: IEEE Internet of Things Journal
+  date: '2025-01-15'
+  link: https://doi.org/g73sbc
+  type: journal
+  co-author: true
+  shortPublisher: IEEE IOTJ'25
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2024.3408751
+  title: Fairness-Aware Two-Stage Hybrid Sensing Method in Vehicular Crowdsensing
+  authors:
+  - Zhenning Wang
+  - Yue Cao
+  - Huan Zhou
+  - Libing Wu
+  - Wei Wang
+  - Geyong Min
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2024-12-01'
+  link: https://doi.org/g24cbc
+  type: journal
+  shortPublisher: IEEE TMC'24
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TITS.2023.3305487
+  title: Robust Metric Localization in Autonomous Driving via Doppler Compensation
+    With Single-Chip Radar
+  authors:
+  - Pengen Gao
+  - Shengkai Zhang
+  - Wei Wang
+  - Chris Xiaoxuan Lu
+  publisher: IEEE Transactions on Intelligent Transportation Systems
+  date: '2024-01-01'
+  link: https://doi.org/g24cbh
+  type: journal
+  shortPublisher: IEEE TITS'24
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2024.3446185
+  title: Task-Oriented Video Compressive Streaming for Real-Time Semantic Segmentation
+  authors:
+  - Xuedou Xiao
+  - Yingying Zuo
+  - Mingxuan Yan
+  - Wei Wang
+  - Jianhua He
+  - Qian Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2024-12-01'
+  link: https://doi.org/g73sbf
+  type: journal
+  co-author: true
+  shortPublisher: IEEE TMC'24
+  tags:
+  - Segmentation
+  - Video Streaming
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3636534.3690674
+  title: 'GPSense: Passive Sensing with Pervasive GPS Signals'
+  authors:
+  - Huixin Dong
+  - Minhao Cui
+  - Ning Wang
+  - Lili Qiu
+  - Jie Xiong
+  - Wei Wang
+  publisher: Proceedings of the 30th Annual International Conference on Mobile Computing
+    and Networking
+  date: '2024-12-04'
+  link: https://doi.org/g8tvpt
+  type: conference
+  co-author: true
+  shortPublisher: ACM MobiCom'24
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://metaiot.group/publication/paper/mobicom24-GPSense.pdf
+  - type: slides
+    text: SLIDES
+    link: /publication/slides/MobiCom2024_GPSense_slides.pdf
+  - type: video
+    text: VIDEO
+    link: https://cdn.metaiot.group/metaiot/video/Mobicom24Demo.mp4
+  tags:
+  - GPS Sensing
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3698386.3699993
+  title: A Unified Tunnel-diode Based Low Power Signal Waveform Transform Hardware
+    for RF Computing
+  authors:
+  - Huixin Dong
+  - Liu Yang
+  - Lehuan Yang
+  - Zhiqing Luo
+  - Chunshen li
+  - Xianan Zhang
+  - Wei Wang
+  publisher: Proceedings of the First International Workshop on Radio Frequency (RF)
+    Computing
+  date: '2024-11-04'
+  link: https://doi.org/g8zhwg
+  type: conference
+  co-author: true
+  shortPublisher: ACM RFCom'24
+  tags:
+  - RF Computing
+  - Best Paper Award
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3570361.3592511
+  title: 'GPSMirror: Expanding Accurate GPS Positioning to Shadowed and Indoor Regions
+    with Backscatter'
+  authors:
+  - Huixin Dong
+  - Yirong Xie
+  - Xianan Zhang
+  - Wei Wang
+  - Xinyu Zhang
+  - Jianhua He
+  publisher: Proceedings of the 29th Annual International Conference on Mobile Computing
+    and Networking
+  date: '2023-06-10'
+  link: https://doi.org/g2qdtt
+  type: conference
+  shortPublisher: ACM MobiCom'23
+  co-author: true
+  image: https://www.catalyzex.com/_next/image?url=https%3A%2F%2Fd3i71xaburhd42.cloudfront.net%2F531429cc78035c2fc43560d8a7dd09d93fd8b201%2F2-Figure1-1.png&w=384&q=75
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/pdf/2304.07572
+  - type: slides
+    text: SLIDES
+    link: /publication/slides/DongGPSMirror.pdf
+  tags:
+  - Backscatter Network
+  - GPS Sensing
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3581783.3613808
+  title: 'Think before You Leap: Content-Aware Low-Cost Edge-Assisted Video Semantic
+    Segmentation'
+  authors:
+  - Mingxuan Yan
+  - Yi Wang
+  - Xuedou Xiao
+  - Zhiqing Luo
+  - Jianhua He
+  - Wei Wang
+  publisher: Proceedings of the 31st ACM International Conference on Multimedia
+  date: '2023-10-26'
+  link: https://doi.org/g24b9x
+  co-author: true
+  type: conference
+  shortPublisher: ACM MM'23
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1109/INFOCOM53939.2023.10228909
+  title: 'From Ember to Blaze: Swift Interactive Video Adaptation via Meta-Reinforcement
+    Learning'
+  authors:
+  - Xuedou Xiao
+  - Mingxuan Yan
+  - Yingying Zuo
+  - Boxi Liu
+  - Paul Ruan
+  - Yang Cao
+  - Wei Wang
+  publisher: IEEE INFOCOM 2023 - IEEE Conference on Computer Communications
+  date: '2023-05-17'
+  link: https://doi.org/g2xzvf
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'23
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-30637-2_47
+  title: "FedGR: Federated Learning with\_Gravitation Regulation for\_Double Imbalance\
+    \ Distribution"
+  authors:
+  - Songyue Guo
+  - Xu Yang
+  - Jiyuan Feng
+  - Ye Ding
+  - Wei Wang
+  - Yunqing Feng
+  - Qing Liao
+  publisher: Lecture Notes in Computer Science
+  date: '2023-01-01'
+  link: https://doi.org/g73r8w
+  type: conference
+  shortPublisher: DASFAA'23
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3569477
+  title: Non-intrusive Anomaly Detection of Industrial Robot Operations by Exploiting
+    Nonlinear Effect
+  authors:
+  - Zhiqing Luo
+  - Mingxuan Yan
+  - Wei Wang
+  - Qian Zhang
+  publisher: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies
+  date: '2022-12-21'
+  link: https://doi.org/g24b95
+  co-author: true
+  type: journal
+  shortPublisher: ACM UbiComp'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2022.3209656
+  title: 'InFit: Combination Movement Recognition For Intensive Fitness Assistant
+    Via Wi-Fi'
+  authors:
+  - Huichuwu Li
+  - Jiang Xiao
+  - Wei Wang
+  - Lu Wang
+  - Dian Zhang
+  - Hai Jin
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2022-01-01'
+  link: https://doi.org/g73sbv
+  type: journal
+  shortPublisher: IEEE TMC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2022.3232375
+  title: Delay-Aware Cooperative Task Offloading for Multi-UAV Enabled Edge-Cloud
+    Computing
+  authors:
+  - Zhuoyi Bai
+  - Yifan Lin
+  - Yang Cao
+  - Wei Wang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2022-01-01'
+  link: https://doi.org/gtxgqd
+  type: journal
+  shortPublisher: IEEE TMC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2020.3035797
+  title: 'LoRadar: Enabling Concurrent Radar Sensing and LoRa Communication'
+  authors:
+  - Qianyi Huang
+  - Zhiqing Luo
+  - Jin Zhang
+  - Wei Wang
+  - Qian Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2022-06-01'
+  link: https://doi.org/gmkqpv
+  type: journal
+  shortPublisher: IEEE TMC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TCOMM.2022.3147791
+  title: 'Covert Communication With Uninformed Backscatters in Hybrid Active/Passive
+    Wireless Networks: Modeling and Performance Analysis'
+  authors:
+  - Wenyuan Ma
+  - Zhiang Niu
+  - Wei Wang
+  - Shiyue He
+  - Tao Jiang
+  publisher: IEEE Transactions on Communications
+  date: '2022-04-01'
+  link: https://doi.org/g73sb4
+  type: journal
+  shortPublisher: IEEE TCOMM'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2021.3121794
+  title: Single-Antenna Device-to-Device Localization in Smart Environments With Backscatter
+  authors:
+  - Zhiqing Luo
+  - Qian Zhang
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE Internet of Things Journal
+  date: '2022-06-15'
+  link: https://doi.org/g73sbx
+  co-author: true
+  type: conference
+  shortPublisher: IEEE IOTJ'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2021.3063850
+  title: LoRa Backscatter Assisted State Estimator for Micro Aerial Vehicles with
+    Online Initialization
+  authors:
+  - Shengkai Zhang
+  - Wei Wang
+  - Ning Zhang
+  - Tao Jiang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2021-01-01'
+  link: https://doi.org/g73scd
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2021.3084754
+  title: Securing IoT Devices by Exploiting Backscatter Propagation Signatures
+  authors:
+  - Zhiqing Luo
+  - Wei Wang
+  - Qianyi Huang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2022-12-01'
+  link: https://doi.org/g73sb7
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2021.3075549
+  title: Exploiting Channel Polarization for Reliable Wide-Area Backscatter Networks
+  authors:
+  - Guochao Song
+  - Wei Wang
+  - Hang Yang
+  - Dongchen Zhang
+  - Peng Gao
+  - Tao Jiang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2022-12-01'
+  link: https://doi.org/g73sb9
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2021.3129188
+  title: Forgery Attack Detection in Surveillance Video Streams Using Wi-Fi Channel
+    State Information
+  authors:
+  - Yong Huang
+  - Xiang Li
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2022-06-01'
+  link: https://doi.org/gnt8g4
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNET.2021.3136911
+  title: Sensor-Assisted Rate Adaptation for UAV MU-MIMO Networks
+  authors:
+  - Xuedou Xiao
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE/ACM Transactions on Networking
+  date: '2022-08-01'
+  link: https://doi.org/g73sb6
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TON'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA46639.2022.9811561
+  title: 'DC-Loc: Accurate Automotive Radar Based Metric Localization with Explicit
+    Doppler Compensation'
+  authors:
+  - Pengen Gao
+  - Shengkai Zhang
+  - Wei Wang
+  - Chris Xiaoxuan Lu
+  publisher: 2022 International Conference on Robotics and Automation (ICRA)
+  date: '2022-05-23'
+  link: https://doi.org/g73sb2
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICRA'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM48880.2022.9796657
+  title: DNN-Driven Compressive Offloading for Edge-Assisted Semantic Video Segmentation
+  authors:
+  - Xuedou Xiao
+  - Juecheng Zhang
+  - Wei Wang
+  - Jianhua He
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2022 - IEEE Conference on Computer Communications
+  date: '2022-05-02'
+  link: https://doi.org/grbtcc
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'22
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2020.3028449
+  title: 'RepChain: A Reputation-Based Secure, Fast, and High Incentive Blockchain
+    System via Sharding'
+  authors:
+  - Chenyu Huang
+  - Zeyu Wang
+  - Huangxun Chen
+  - Qiwei Hu
+  - Qian Zhang
+  - Wei Wang
+  - Xia Guan
+  publisher: IEEE Internet of Things Journal
+  date: '2021-03-15'
+  link: https://doi.org/gjh9wx
+  type: conference
+  shortPublisher: IEEE IOTJ'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TIE.2020.2984457
+  title: Wi-Fi-Inertial Indoor Pose Estimation for Microaerial Vehicles
+  authors:
+  - Shengkai Zhang
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE Transactions on Industrial Electronics
+  date: '2021-05-01'
+  link: https://doi.org/g73sc5
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TIE'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TCOMM.2020.3036049
+  title: Joint Energy Harvest and Information Transfer for Energy Beamforming in Backscatter
+    Multiuser Networks
+  authors:
+  - Wenyuan Ma
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE Transactions on Communications
+  date: '2021-02-01'
+  link: https://doi.org/g73sch
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TCOMM'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNET.2020.3048126
+  title: Detecting Colluding Sybil Attackers in Robotic Networks Using Backscatters
+  authors:
+  - Yong Huang
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE/ACM Transactions on Networking
+  date: '2021-04-01'
+  link: https://doi.org/g73sck
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TON'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM42981.2021.9488798
+  title: Towards Cross-Modal Forgery Detection and Localization on Live Surveillance
+    Videos
+  authors:
+  - Yong Huang
+  - Xiang Li
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2021 - IEEE Conference on Computer Communications
+  date: '2021-05-10'
+  link: https://doi.org/gmr36h
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICRA48506.2021.9560744
+  title: Conquering Textureless with RF-referenced Monocular Vision for MAV State
+    Estimation
+  authors:
+  - Shengkai Zhang
+  - Sheyang Tang
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: 2021 IEEE International Conference on Robotics and Automation (ICRA)
+  date: '2021-05-30'
+  link: https://doi.org/gqrgm6
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICRA'21
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2020.2984877
+  title: 'FreeScatter: Enabling Concurrent Backscatter Communication Using Antenna
+    Arrays'
+  authors:
+  - Qianyi Huang
+  - Guochao Song
+  - Wei Wang
+  - Huixin Dong
+  - Jin Zhang
+  - Qian Zhang
+  publisher: IEEE Internet of Things Journal
+  date: '2020-08-01'
+  link: https://doi.org/g73sc9
+  type: conference
+  shortPublisher: IEEE IOTJ'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMM.2019.2929965
+  title: Incentive Mechanism for Cooperative Scalable Video Coding (SVC) Multicast
+    Based on Contract Theory
+  authors:
+  - Zeyu Xu
+  - Yang Cao
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Multimedia
+  date: '2020-02-01'
+  link: https://doi.org/g73sdq
+  type: conference
+  shortPublisher: IEEE TMM'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2019.2949791
+  title: Joint C-OMA and C-NOMA Wireless Backhaul Scheduling in Heterogeneous Ultra
+    Dense Networks
+  authors:
+  - Qing Zhang
+  - Kai Luo
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2020-02-01'
+  link: https://doi.org/g73sdg
+  type: conference
+  shortPublisher: IEEE TWC'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2020.2970412
+  title: Securing Channel State Information in Multiuser MIMO With Limited Feedback
+  authors:
+  - Yang Yang
+  - Yanjiao Chen
+  - Wei Wang
+  - Gang Yang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2020-05-01'
+  link: https://doi.org/gn3k97
+  type: conference
+  shortPublisher: IEEE TWC'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TVT.2020.3026184
+  title: A Two-Stage Game Framework to Secure Transmission in Two-Tier UAV Networks
+  authors:
+  - Mengnian Xu
+  - Yanjiao Chen
+  - Wei Wang
+  publisher: IEEE Transactions on Vehicular Technology
+  date: '2020-11-01'
+  link: https://doi.org/gm83pc
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TVT'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2019.2959203
+  title: 'EchoFace: Acoustic Sensor-Based Media Attack Detection for Face Authentication'
+  authors:
+  - Huangxun Chen
+  - Wei Wang
+  - Jin Zhang
+  - Qian Zhang
+  publisher: IEEE Internet of Things Journal
+  date: '2020-03-01'
+  link: https://doi.org/gg4q2n
+  co-author: true
+  type: conference
+  shortPublisher: IEEE IOTJ'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3411833
+  title: Peer-to-Peer Localization for Single-Antenna Devices
+  authors:
+  - Xianan Zhang
+  - Wei Wang
+  - Xuedou Xiao
+  - Hang Yang
+  - Xinyu Zhang
+  - Tao Jiang
+  publisher: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies
+  date: '2020-09-04'
+  link: https://doi.org/gk6c68
+  co-author: true
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TVT.2019.2950285
+  title: State-Aware Rate Adaptation for UAVs by Incorporating On-Board Sensors
+  authors:
+  - Shiyue He
+  - Wei Wang
+  - Hang Yang
+  - Yang Cao
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Vehicular Technology
+  date: '2020-01-01'
+  link: https://doi.org/g73sdj
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TVT'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2020.2991111
+  title: 'Authenticating On-Body IoT Devices: An Adversarial Learning Approach'
+  authors:
+  - Yong Huang
+  - Wei Wang
+  - Hao Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2020-08-01'
+  link: https://doi.org/gk7697
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2020.2997393
+  title: Robot-Assisted Backscatter Localization for IoT Applications
+  authors:
+  - Shengkai Zhang
+  - Wei Wang
+  - Sheyang Tang
+  - Shi Jin
+  - Tao Jiang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2020-09-01'
+  link: https://doi.org/g73sc2
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TWC'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMM.2019.2945167
+  title: Sensor-Augmented Neural Adaptive Bitrate Video Streaming on UAVs
+  authors:
+  - Xuedou Xiao
+  - Wei Wang
+  - Taobin Chen
+  - Yang Cao
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Multimedia
+  date: '2020-06-01'
+  link: https://doi.org/ghphjn
+  co-author: true
+  type: conference
+  shortPublisher: IEEE TMM'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNET.2020.2966112
+  title: Enabling Low-Power OFDM for IoT by Exploiting Asymmetric Clock Rates
+  authors:
+  - Wei Wang
+  - Shiyue He
+  - Qian Zhang
+  - Tao Jiang
+  publisher: IEEE/ACM Transactions on Networking
+  date: '2020-04-01'
+  link: https://doi.org/g73sdb
+  type: conference
+  shortPublisher: IEEE TON'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1609/aaai.v34i04.5748
+  title: 'ECGadv: Generating Adversarial Electrocardiogram to Misguide Arrhythmia
+    Classification System'
+  authors:
+  - Huangxun Chen
+  - Chenyu Huang
+  - Qianyi Huang
+  - Qian Zhang
+  - Wei Wang
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  date: '2020-04-03'
+  link: https://doi.org/g73r92
+  type: conference
+  shortPublisher: AAAI'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM41043.2020.9155244
+  title: Lightweight Sybil-Resilient Multi-Robot Networks by Multipath Manipulation
+  authors:
+  - Yong Huang
+  - Wei Wang
+  - Yiyuan Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2020 - IEEE Conference on Computer Communications
+  date: '2020-07-01'
+  link: https://doi.org/ghkk6h
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM41043.2020.9155391
+  title: Reliable Wide-Area Backscatter via Channel Polarization
+  authors:
+  - Guochao Song
+  - Hang Yang
+  - Wei Wang
+  - Tao Jiang
+  publisher: IEEE INFOCOM 2020 - IEEE Conference on Computer Communications
+  date: '2020-07-01'
+  link: https://doi.org/ghkk3v
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM41043.2020.9155463
+  title: RF Backscatter-based State Estimation for Micro Aerial Vehicles
+  authors:
+  - Shengkai Zhang
+  - Wei Wang
+  - Ning Zhang
+  - Tao Jiang
+  publisher: IEEE INFOCOM 2020 - IEEE Conference on Computer Communications
+  date: '2020-07-01'
+  link: https://doi.org/ghkkwn
+  co-author: true
+  type: conference
+  shortPublisher: IEEE INFOCOM'20
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2018.2882583
+  title: 'Caching Transient Data for Internet of Things: A Deep Reinforcement Learning
+    Approach'
+  authors:
+  - Hao Zhu
+  - Yang Cao
+  - Xiao Wei
+  - Wei Wang
+  - Tao Jiang
+  - Shi Jin
+  publisher: IEEE Internet of Things Journal
+  date: '2019-04-01'
+  link: https://doi.org/gfkrch
+  type: journal
+  shortPublisher: IEEE IOTJ'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2018.2883443
+  title: Cross-Technology Communications for Heterogeneous IoT Devices Through Artificial
+    Doppler Shifts
+  authors:
+  - Wei Wang
+  - Shiyue He
+  - Liang Sun
+  - Tao Jiang
+  - Qian Zhang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2019-02-01'
+  link: https://doi.org/g73sdt
+  type: conference
+  shortPublisher: IEEE TWC'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/GLOBECOM38437.2019.9013912
+  title: Energy Beamforming for Wireless Information and Power Transfer in Backscatter
+    Multiuser Networks
+  authors:
+  - Wenyuan Ma
+  - Wei Wang
+  - Tao Jiang
+  publisher: 2019 IEEE Global Communications Conference (GLOBECOM)
+  date: '2019-12-01'
+  link: https://doi.org/g73r93
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/GLOBECOM38437.2019.9013382
+  title: 'Spatial Modulation for Ambient Backscatter Communications: Modeling and
+    Analysis'
+  authors:
+  - Zhiang Niu
+  - Wei Wang
+  - Tao Jiang
+  publisher: 2019 IEEE Global Communications Conference (GLOBECOM)
+  date: '2019-12-01'
+  link: https://doi.org/g73r98
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/GLOBECOM38437.2019.9013768
+  title: Localizing Backscatters by a Single Robot with Zero Start-Up Cost
+  authors:
+  - Shengkai Zhang
+  - Wei Wang
+  - Sheyang Tang
+  - Shi Jin
+  - Tao Jiang
+  publisher: 2019 IEEE Global Communications Conference (GLOBECOM)
+  date: '2019-12-01'
+  link: https://doi.org/g35rp7
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICC.2019.8761982
+  title: Towards Motion Invariant Authentication for On-Body IoT Devices
+  authors:
+  - Yong Huang
+  - Mengnian Xu
+  - Wei Wang
+  - Hao Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: ICC 2019 - 2019 IEEE International Conference on Communications (ICC)
+  date: '2019-05-01'
+  link: https://doi.org/g73sbb
+  co-author: true
+  type: conference
+  shortPublisher: IEEE ICC'19
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3274783.3275157
+  title: 'Wins: Wifi-inertial indoor state estimation for mavs'
+  authors:
+  - Shengkai Zhang
+  - Sheyang Tang
+  - Wei Wang
+  - Tao Jiang
+  publisher: Proceedings of the 16th ACM Conference on Embedded Networked Sensor Systems
+  date: '2018-11-04'
+  link: https://doi.org/g737w4
+  co-author: true
+  type: conference
+  shortPublisher: ACM SenSys'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2018.8485881
+  title: 'Rainbow: Preventing Mobile-Camera-based Piracy in the Physical World'
+  authors:
+  - Lin Yang
+  - Wei Wang
+  - Zeyu Wang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2018 - IEEE Conference on Computer Communications
+  date: '2018-04-01'
+  link: https://doi.org/ghkmtp
+  type: conference
+  shortPublisher: IEEE INFOCOM'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/GLOCOM.2018.8648032
+  title: 'On secure transmission design: An information leakage perspective'
+  authors:
+  - Yong Huang
+  - Wei Wang
+  - Biao He
+  - Liang Sun
+  - Tao Jiang
+  publisher: 2018 IEEE Global Communications Conference (GLOBECOM)
+  date: '2018-12-01'
+  link: https://doi.org/g737w2
+  co-author: true
+  type: conference
+  shortPublisher: IEEE GLOBECOM'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3274783.3274841
+  title: 'ShieldScatter: Improving IoT security with backscatter assistance'
+  authors:
+  - Zhiqing Luo
+  - Wei Wang
+  - Jun Qu
+  - Tao Jiang
+  - Qian Zhang
+  publisher: Proceedings of the 16th ACM Conference on Embedded Networked Sensor Systems
+  date: '2018-11-04'
+  link: https://doi.org/g737w7
+  co-author: true
+  type: conference
+  shortPublisher: ACM SenSys'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2018.8486233
+  title: 'Wi-Fi Teeter-Totter: Overclocking OFDM for Internet of Things'
+  authors:
+  - Wei Wang
+  - Shiyue He
+  - Lin Yang
+  - Qian Zhang
+  - Tao Jian
+  publisher: IEEE INFOCOM 2018 - IEEE Conference on Computer Communications
+  date: '2018-04-01'
+  link: https://doi.org/ghkmvh
+  type: conference
+  shortPublisher: IEEE INFOCOM'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3185503
+  title: 'Toward battery-free wearable devices: The synergy between two feet'
+  authors:
+  - Qianyi Huang
+  - Yan Mei
+  - Wei Wang
+  - Qian Zhang
+  publisher: ACM Transactions on Cyber-Physical Systems
+  date: '2018-06-13'
+  link: https://doi.org/g737zz
+  type: journal
+  shortPublisher: ACM TCPS'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3287077
+  title: 'NALoc: Nonlinear ambient-light-sensor-based localization system'
+  authors:
+  - Lin Yang
+  - Zeyu Wang
+  - Wei Wang
+  - Qian Zhang
+  publisher: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies
+  date: '2018-12-27'
+  link: https://doi.org/ghkqxr
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TVT.2018.2864178
+  title: Nonlinear-Precoded Multiuser Secure Transmission With Cooperative Jamming
+    and Adaptive Limited Feedback
+  authors:
+  - Liang Sun
+  - Rui Wang
+  - Wei Wang
+  - Victor C. M. Leung
+  publisher: IEEE Transactions on Vehicular Technology
+  date: '2018-10-01'
+  link: https://doi.org/gfjk7g
+  co-author: true
+  type: journal
+  shortPublisher: IEEE TVT'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/3266002
+  title: Authenticating On-Body Backscatter by Exploiting Propagation Signatures
+  authors:
+  - Zhiqing Luo
+  - Wei Wang
+  - Jiang Xiao
+  - Qianyi Huang
+  - Tao jiang
+  - Qian Zhang
+  publisher: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies
+  date: '2018-09-18'
+  link: https://doi.org/g737zx
+  co-author: true
+  type: journal
+  shortPublisher: ACM IMWUT/UbiComp'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/MWC.2018.1700081
+  title: 'Toward cross-layer design for non-orthogonal multiple access: A quality-of-experience
+    perspective'
+  authors:
+  - Wei Wang
+  - Yuanwei Liu
+  - Zhiqing Luo
+  - Tao Jiang
+  - Qian Zhang
+  - Arumugam Nallanathan
+  publisher: IEEE Wireless Communications
+  date: '2018-04-01'
+  link: https://doi.org/gfxgb6
+  type: journal
+  shortPublisher: IEEE TWC'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2018.2809736
+  title: Resonance-Based Secure Pairing for Wearables
+  authors:
+  - Wei Wang
+  - Lin Yang
+  - Qian Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2018-11-01'
+  link: https://doi.org/g737z6
+  type: journal
+  shortPublisher: IEEE TMC'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JSAC.2018.2824939
+  title: Securing On-Body IoT Devices By Exploiting Creeping Wave Propagation
+  authors:
+  - Wei Wang
+  - Lin Yang
+  - Qian Zhang
+  - Tao Jiang
+  publisher: IEEE Journal on Selected Areas in Communications
+  date: '2018-04-01'
+  link: https://doi.org/g737z4
+  type: journal
+  shortPublisher: IEEE JSAC'18
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.comnet.2017.07.012
+  title: Personalized user engagement modeling for mobile videos
+  authors:
+  - Lin Yang
+  - Mingxuan Yuan
+  - Yanjiao Chen
+  - Wei Wang
+  - Qian Zhang
+  - Jia Zeng
+  publisher: Computer Networks
+  date: '2017-10-01'
+  link: https://doi.org/gb4nd7
+  type: journal
+  shortPublisher: Computer Networks'17
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/JIOT.2017.2656151
+  title: 'Your glasses know your diet: Dietary monitoring using electromyography sensors'
+  authors:
+  - Qianyi Huang
+  - Wei Wang
+  - Qian Zhang
+  publisher: IEEE Internet of Things Journal
+  date: '2017-06-01'
+  link: https://doi.org/g7372h
+  type: journal
+  shortPublisher: IEEE IOTJ'17
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2016.2538225
+  title: Wideband Spectrum Adaptation Without Coordination
+  authors:
+  - Wei Wang
+  - Yinejie Chen
+  - Zeyu Wang
+  - Jin Zhang
+  - Kaishun Wu
+  - Qian Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2017-01-01'
+  link: https://doi.org/g7372m
+  type: journal
+  shortPublisher: IEEE TMC'17
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNET.2016.2643160
+  title: 'Sampleless Wi-Fi: Bringing Low Power to Wi-Fi Communications'
+  authors:
+  - Wei Wang
+  - Yingjie Chen
+  - Lu Wang
+  - Qian Zhang
+  publisher: IEEE/ACM Transactions on Networking
+  date: '2017-06-01'
+  link: https://doi.org/gbk5z7
+  type: journal
+  shortPublisher: IEEE TON'17
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2017.8057207
+  title: Detecting on-body devices through creeping wave propagation
+  authors:
+  - Wei Wang
+  - Yingjie Chen
+  - Lin Yang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2017 - IEEE Conference on Computer Communications
+  date: '2017-05-01'
+  link: https://doi.org/g737w9
+  type: conference
+  shortPublisher: IEEE INFOCOM'17
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IPSN.2016.7460725
+  title: 'VibID: User Identification through Bio-Vibrometry'
+  authors:
+  - Lin Yang
+  - Wei Wang
+  - Qian Zhang
+  publisher: 2016 15th ACM/IEEE International Conference on Information Processing
+    in Sensor Networks (IPSN)
+  date: '2016-04-01'
+  link: https://doi.org/g737xg
+  type: conference
+  shortPublisher: IEEE IPSN'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/2994551.2994556
+  title: 'Secret from muscle: Enabling secure pairing with electromyography'
+  authors:
+  - Lin Yang
+  - Wei Wang
+  - Qian Zhang
+  publisher: Proceedings of the 14th ACM Conference on Embedded Network Sensor Systems
+    CD-ROM
+  date: '2016-11-14'
+  link: https://doi.org/g737xb
+  type: conference
+  shortPublisher: ACM SenSys'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2016.7524464
+  title: 'Apps on the move: A fine-grained analysis of usage behavior of mobile apps'
+  authors:
+  - Lin Yang
+  - Mingxuan Yuan
+  - Wei Wang
+  - Qian Zhang
+  - Jia Zeng
+  publisher: IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on
+    Computer Communications
+  date: '2016-04-01'
+  link: https://doi.org/g737xh
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2016.7524543
+  title: 'Battery-free sensing platform for wearable devices: The synergy between
+    two feet'
+  authors:
+  - Qianyi Huang
+  - Yan Mei
+  - Wei Wang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on
+    Computer Communications
+  date: '2016-04-01'
+  link: https://doi.org/ggsgx2
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICC.2016.7511455
+  title: Managing channel bonding with clear channel assessment in 802.11 networks
+  authors:
+  - Wei Wang
+  - Fan Zhang
+  - Qian Zhang
+  publisher: 2016 IEEE International Conference on Communications (ICC)
+  date: '2016-05-01'
+  link: https://doi.org/g737xf
+  type: conference
+  shortPublisher: IEEE ICC'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/INFOCOM.2016.7524424
+  title: 'From rateless to sampleless: Wi-Fi connectivity made energy efficient'
+  authors:
+  - Wei Wang
+  - Yingjie Chen
+  - Lu Wang
+  - Qian Zhang
+  publisher: IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on
+    Computer Communications
+  date: '2016-04-01'
+  link: https://doi.org/g737xm
+  type: conference
+  shortPublisher: IEEE INFOCOM'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1145/2971648.2971688
+  title: 'Touch-and-guard: secure pairing through hand resonance'
+  authors:
+  - Wei Wang
+  - Lin Yang
+  - Qian Zhang
+  publisher: Proceedings of the 2016 ACM International Joint Conference on Pervasive
+    and Ubiquitous Computing
+  date: '2016-09-12'
+  link: https://doi.org/gf3cpk
+  type: conference
+  shortPublisher: ACM UbiComp'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TWC.2015.2487453
+  title: Privacy-Preserving Location Authentication in Wi-Fi Networks Using Fine-Grained
+    Physical Layer Signatures
+  authors:
+  - Wei Wang
+  - Yingjie Chen
+  - Qian Zhang
+  publisher: IEEE Transactions on Wireless Communications
+  date: '2016-02-01'
+  link: https://doi.org/f8b5d7
+  type: journal
+  shortPublisher: IEEE TWC'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TMC.2015.2449291
+  title: 'Less Transmissions, More Throughput: Bringing Carpool to Public WLANs'
+  authors:
+  - Wei Wang
+  - Yingjie Chen
+  - Qian Zhang
+  - Kaishun Wu
+  - Jin Zhang
+  publisher: IEEE Transactions on Mobile Computing
+  date: '2016-05-01'
+  link: https://doi.org/g8zhwh
+  type: journal
+  shortPublisher: IEEE TMC'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/TNET.2015.2512301
+  title: Privacy Preservation for Context Sensing on Smartphone
+  authors:
+  - Wei Wang
+  - Qian Zhang
+  publisher: IEEE/ACM Transactions on Networking
+  date: '2016-12-01'
+  link: https://doi.org/f9mgd5
+  type: journal
+  shortPublisher: IEEE TON'16
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-319-32903-1_50-1
+  title: Long-Term Quality of Protection
+  authors:
+  - Wei Wang
+  - Tao Jiang
+  - Qian Zhang
+  publisher: Encyclopedia of Wireless Networks
+  date: '2018-01-01'
+  link: https://doi.org/g8rkv5
+  type: book
+  shortPublisher: Springer
+  plugin: sources.py
+  file: sources.yaml

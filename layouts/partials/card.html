@@ -1,0 +1,27 @@
+<div class="card" {{ if .style }}data-style="{{ .style }}" {{ end }}>
+    <a {{ if .link }}href="{{ .link | relURL }}" {{ end }} aria-label="{{ .title | default " card link" }}"
+        class="card-image">
+        {{ if .image }}
+        <img src="{{ .image | relURL }}" alt="{{ .title | default " card image" }}" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.classList.add('fallback');">
+        {{ end }}
+    </a>
+
+    <div class="card-text">
+        {{ if .title }}
+        <a {{ if .link }}href="{{ .link | relURL }}" {{ end }} class="card-title" {{ if .style
+            }}data-style="{{ .style }}" {{ end }}>
+            {{ .title }}
+        </a>
+        {{ end }}
+
+        {{ if .description }}
+        <p class="card-description" {{ if .style }}data-style="{{ .style }}" {{ end }}>
+            {{ .description | markdownify | replaceRE "<p>" "" | replaceRE "</p>" "" | safeHTML }}
+        </p>
+        {{ end }}
+
+        {{ partial "button.html" (dict "link" .link "text" "Learn More" "icon" "fa-solid fa-arrow-right" "flip" true
+        "style" "more") }}
+    </div>
+</div>

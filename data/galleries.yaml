@@ -1,0 +1,183 @@
+events:
+  - title: "Hosted RFCom workshop@MobiCom 2025"
+    date: 2025-11-08
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2025-11-08_RFCom_HK.webp
+
+  - title: "MobiCom@HKUST"
+    date: 2025-11-07
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2025-11-07_Mobicom25_HKUST.webp
+
+  - title: "MobiCom25@Hong Kong, China"
+    date: 2025-11-05
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2025-11-05_Mobicom25_HK.webp
+
+  - title: "ICCV25@Honolulu, Hawai'i, USA"
+    date: 2025-10-23
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2025-10-23_ICCV.webp
+
+  - title: "IJCAI25 satellite event@Guangzhou, China"
+    date: 2025-08-31
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2025-08-31_IJCAI.webp
+
+  - title: "Team-building in Dongli Laowu Farmland"
+    date: 2025-05-11
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2025-05-11_GroupCamping.webp
+
+  - title: "Girls' Equation to Innovation"
+    date: 2025-05-11
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2025-05-11_Girls.webp
+
+  - title: "Group Dinner"
+    date: 2025-01-17
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2025-01-17_Group_Dinner.webp
+
+  - title: "Beijing 798 Art Zone"
+    date: 2024-12-26
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2024-12-26_beijing798.webp
+
+  - title: "MobiCom24@Washington, D.C., USA"
+    date: 2024-11-25
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2024-11-25_AttendMobiCom2024.webp
+
+  - title: "City walk in Washington, DC"
+    date: 2024-11-25
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2024-11-25_TravelinWashington_afterMobiCom2024.webp
+
+  - title: "Group gathering in ACM SenSys 2024, Hangzhou"
+    date: 2024-11-04
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2024-11-04_AttendSenSys2024.webp
+
+  - title: "Biu, biu, biu, have fun on the group spring trip."
+    date: 2024-06-01
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2024-06-01_20240601-16-9.webp
+
+  - title: "MobiCom23@Madrid, Spain"
+    date: 2023-10-02
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2023-10-02_Mobicom23_Spain.webp
+
+
+  - title: "Welcome Prof. Jianhua He's visit"
+    date: 2023-08-12
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2023-08-12_hejianhua.webp
+
+  - title: "2022 Graduation lunch"
+    date: 2022-06-21
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2022-06-21_Graduation_lunch.webp
+
+  - title: "Go boating."
+    date: 2021-04-10
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2023-04-05_GoBoating.webp
+
+  - title: "Group camping in the Liangzi Lake."
+    date: 2023-04-05
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2023-04-05_20230405-16-9.webp
+
+  - title: "Football drumming."
+    date: 2021-04-10
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2023-04-05_Keep-up.webp
+
+  - title: "Attend INFOCOM'18@Honolulu, USA"
+    date: 2018-04-15
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2018-04-15_INFOCOM2018.webp
+
+  - title: "Group photo with Confucius sculpture"
+    date: 2018-02-07
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2018-02-07.webp
+
+  - title: "Attend GLOBECOM'19@Waikoloa, USA"
+    date: 2019-12-09
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2019-12-09_GLOBECOM2019.webp
+
+  - title: "Attend ubicomp'18@Singapore"
+    date: 2018-10-09
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2018-10-09_ubicomp2018.webp
+
+  - title: "2024 Graduation lunch"
+    date: 2024-06-22
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2024-06-22_Graduation.webp
+
+  - title: "2019 Graduation lunch"
+    date: 2019-06-10
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2019-06-10_Graduationof2019.webp
+
+  - title: "Group photo on Teachers' Day 2024"
+    date: 2024-10-22
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2024-09-10_TeachersDay.webp

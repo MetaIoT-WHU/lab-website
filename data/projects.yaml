@@ -1,0 +1,55 @@
+- title: Spatial perception and intelligence for embodied AI
+  group: theme
+  image: images/areas/RF_Embodied_AI.gif
+  link: https://shengpeng.wang/sddiff/
+  description: Millimeter-wave radar with Spatial-Doppler representation empowers spatial perception and intelligence for embodied AI, enabling reliable sensing and motion understanding in autonomous driving, robotics, and complex dynamic environments.
+  repo: greenelab/lab-website-template
+  tags:
+    - Embodied AI
+
+- title: High-precision perception for automotive vehicles
+  group: theme
+  image: images/areas/mmWave.gif
+  link: https://metaiot.group/
+  description: Millimeter wave radar provides an ideal solution for low-power, self-monitored, ultra accurate radar systems in various industrial applications, such as automotive vehicles, factory automation, drones, material handling, traffic monitoring, and surveillance.
+  repo: greenelab/lab-website-template
+  tags:
+    - mmWave
+
+- title: Ultra-low-power IoT network powered with ambient energy
+  group: theme
+  image: images/areas/backscatter.png
+  link: https://metaiot.group/
+  description: Backscatter uses existing radio frequency signals, such as radio, television, and mobile telephony, to transmit data without a battery or power grid connection. Each such device harvest energy from the ambient signals. It uses that power to modify and reflect the signal with encoded data for communication.
+  repo: greenelab/lab-website-template
+  tags:
+    - IoT
+
+
+- title: 'Improving Multi-Vehicle Perception with mmWave Radar Assistance'
+  subtitle: IEEE INFOCOM'25
+  group: project
+  image: images/PaperCover/CP_infocom25.webp
+  link: https://metaiot.group/
+  description: We present a lightweight system that enables accurate and realtime perception fusion with mmWave radar point clouds to improve driving safety.  The key insight is that fine-grained spatial information provided by the radar present unique associations with all the vehicles even in two separate views.
+  tags:
+    - resource
+    - publication
+
+- title: 'GPSense: Passive Sensing with Pervasive GPS signals'
+  subtitle: ACM Mobicom'24
+  group: project
+  image: images/PaperCover/gpsense_compressed.gif
+  link: https://mp.weixin.qq.com/s/ZlKyq775pbjZJMsQQrudTQ
+  description: To address the coverage limitation of existing wireless sensing technologies, we propose to utilize GPS signals for sensing and prototype the first GPS wireless sensing system on commercial GPS receiver modules. Comprehensive experiments demonstrate that the proposed system can realize meaningful sensing applications.
+  tags:
+    - software
+
+- title: 'GPSMirror: Expanding GPS Positioning  with Backscatter'
+  subtitle: ACM Mobicom'23
+  group: project
+  image: images/PaperCover/GPSMirror.png
+  link: https://mp.weixin.qq.com/s/TSSfItfpoPL3kE2MPTTZtw
+  description: GPS services still suffer from intermittent positioning with poor accuracy in partially shadowed regions like urban canyons, flyover shadows, etc. We fill the gap with GPSMirror, the first GPS-strengthening system that works for unmodified smartphones with the assistance of newly-designed GPS backscatter tags. 
+  tags:
+    - software

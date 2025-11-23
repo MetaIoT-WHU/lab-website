@@ -1,0 +1,33 @@
+baseURL = "https://metaiot.group/" # 请替换为你的实际域名
+languageCode = "en-us"
+title = "MetaIoT"
+theme = [] # 我们手动重构，不使用第三方主题包
+
+# 启用内联 HTML (因为你的 Markdown 可能包含 HTML 标签)
+[markup.goldmark.renderer]
+unsafe = true
+
+# 对应 Jekyll 的 Syntax Highlighting
+[markup.highlight]
+style = "monokai" # Rouge 的替代品，风格可选
+lineNos = false
+
+# 全局参数 (对应 Jekyll 的 site.xyz)
+[params]
+subtitle = "Welcome to MetaIoT Lab."
+description = "We create the next generation of intelligent wireless systems for communication and sensing with applications in autonomous systems, mixed reality, and IoT."
+header_image = "images/background.webp"
+footer_image = "images/background.webp"
+google_scholar = "YkD8hs0AAAAJ"
+[params.links]
+    email = "mailto:wangw@whu.edu.cn" # 建议加上 mailto:
+    google-scholar = "https://scholar.google.com/citations?user=YkD8hs0AAAAJ" # 建议补全完整链接
+    github = "https://github.com/weisgroup"
+    youtube = "https://www.youtube.com/channel/WeiWANGWilliam" # 建议补全链接
+
+# 菜单配置 (稍后我们会用到)
+[menu]
+
+# 对应 Jekyll 的 Collections
+# Hugo 默认把 content 下的一级目录作为 Section (类似 Collection)
+# 所以 members 和 posts 自动生效，不需要额外配置

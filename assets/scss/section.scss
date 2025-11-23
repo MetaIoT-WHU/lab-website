@@ -1,0 +1,50 @@
+
+$page: 1200px;
+$padding: 20px;
+
+section {
+  // 修复点 1：使用 unquote 和 #{} 插值，强制让 Sass 把这行当作字符串输出，不进行计算
+  padding: $padding unquote("max(#{$padding}, calc((100% - #{$page}) / 2))");
+  transition: background var(--transition), color var(--transition);
+}
+
+// #metaiot-lab {
+//   // 修复点 2：同样处理 hardcoded 的 1400px
+//   padding: $padding unquote("max(#{$padding}, calc((100% - 1400px) / 2))");
+// }
+// #recent-research-projects, #research, #research-themes {
+//   padding: $padding max($padding, calc((100% - 1200px) / 2));
+// }
+
+#colorful-activities {
+  padding: $padding 5%;
+}
+
+section[data-size="wide"] {
+  padding: $padding;
+}
+
+section[data-size="full"] {
+  padding: 0;
+}
+
+section[data-size="full"] > * {
+  margin: 0;
+  border-radius: 0;
+}
+
+section[data-size="full"] img {
+  border-radius: 0;
+}
+
+main > section:last-of-type {
+  flex-grow: 1;
+}
+
+main > section:nth-of-type(odd) {
+  background: var(--background);
+}
+
+main > section:nth-of-type(even) {
+  background: var(--background-alt);
+}

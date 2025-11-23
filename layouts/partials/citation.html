@@ -1,0 +1,109 @@
+{{/* 1. 预处理：获取所有【学生】名单 (排除教授和老师) */}}
+{{ $studentNames := slice }}
+{{ $membersPage := site.GetPage "members" }}
+
+{{ if $membersPage }}
+{{ range $membersPage.Pages }}
+
+{{/* [核心修复] 获取分组，并转为小写以防万一 */}}
+{{ $group := .Params.group | default "" | lower }}
+
+{{/* [核心修复] 只有当组别不是 supervisor 且不是 faculty 时，才加入名单 */}}
+{{ if and (ne $group "supervisor") (ne $group "faculty") }}
+
+{{/* Case A: 单个成员页面 */}}
+{{ if .Params.name }}
+{{ $studentNames = $studentNames | append .Params.name }}
+{{ else }}
+{{ $studentNames = $studentNames | append .Title }}
+{{ end }}
+
+{{/* Case B: 列表型页面 (如 Alumni_Undergrads.md) */}}
+{{ if .Params.members }}
+{{ range .Params.members }}
+{{ if .name }}
+{{ $studentNames = $studentNames | append .name }}
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ end }} {{/* End Group Filter */}}
+
+{{ end }}
+{{ end }}
+
+{{/* --- 下面的渲染逻辑保持不变 --- */}}
+
+{{ $typeConfig := index site.Data.types .type | default dict }}
+{{ $icon := $typeConfig.icon | default "fa-solid fa-file-lines" }}
+
+<div class="citation-container" data-type="{{ .type }}" data-title="{{ .title }}" data-authors="{{ delimit .authors ", " }}" data-year="{{ .date | dateFormat " 2006" }}">
+    <div class="citation">
+        <div class="citation-text">
+
+            {{/* 图标 */}}
+            {{ partial "icon.html" (dict "icon" $icon) }}
+            <div class="publicationType" style="display:none;">{{ .type }}</div>
+
+            {{/* 标题 */}}
+            <div class="citation_title">
+                [<span class="shortPublisher">{{ .shortPublisher | default .publisher | default "" }}</span>]
+                <a {{ if .link }}href="{{ .link | relURL }}" {{ end }} class="citation-title" target="_blank">
+                    {{ .title | default "[no title info]" }}
+                </a>
+                {{ if and .tags (in .tags "Best Paper Award") }}
+                <span style="color:red; font-weight:bold;"> (Best Paper Award)</span>
+                {{ end }}
+            </div>
+
+            {{/* 作者区域 */}}
+            <div class="citation-authors" {{ if gt (len .authors) 10 }}data-tooltip="{{ delimit .authors " , " }}" {{
+                end }}>
+                {{ $authorLen := len .authors }}
+                {{ $coAuthor := .Params.co_author | default (index . "co-author") }}
+
+                {{ range $index, $author := .authors }}
+                {{/* 1. 韦老师 (特定加粗逻辑) */}}
+                {{ if eq $author "Wei Wang" }}
+                <a href="{{ " weiwang.html" | relURL }}">
+                    {{ if $coAuthor }}<b>Wei Wang*</b>{{ else }}<b>Wei Wang</b>{{ end }}
+                </a>
+
+                {{/* 2. 学生 (在过滤后的白名单里才加下划线) */}}
+                {{ else if in $studentNames $author }}
+                <u>{{ $author }}</u>
+
+                {{/* 3. 其他人 (包括其他老师、校外合作者) */}}
+                {{ else }}
+                {{ $author }}
+                {{ end }}
+
+                {{/* 逗号分隔 */}}
+                {{ if lt (add $index 1) $authorLen }}, {{ end }}
+                {{ end }}
+            </div>
+
+            {{/* 出版信息 */}}
+            <div class="citation-details">
+                <span class="citation-publisher">{{ .publisher | default "[no publisher info]" }}</span>
+                &nbsp;·&nbsp;
+                <span class="citation-date">{{ if .date }}{{ .date | dateFormat "02 Jan 2006" }}{{ else }}[no date
+                    info]{{ end }}</span>
+                &nbsp;·&nbsp;
+            </div>
+
+            {{/* 按钮 */}}
+            <div class="citation-buttons">
+                {{ if .buttons }}
+                {{ range .buttons }}
+                {{ partial "button.html" (dict "link" .link "text" .text "icon" .icon "style" .type "type" .type) }}
+                {{ end }}
+                {{ end }}
+                {{ if .pdf }}<a href="{{ .pdf | relURL }}" class="btn-tiny" target="_blank">PDF</a>{{ end }}
+                {{ if .code }}<a href="{{ .code }}" class="btn-tiny" target="_blank">Code</a>{{ end }}
+                {{ if .video }}<a href="{{ .video }}" class="btn-tiny" target="_blank">Video</a>{{ end }}
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {{ if .IsHome }}
+        {{ site.Title }} | {{ site.Params.subtitle }}
+        {{ else }}
+        {{ .Title }} | {{ site.Title }}
+        {{ end }}
+    </title>
+
+    {{ $styles := resources.Get "scss/all.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <link href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+    <link rel="shortcut icon" href="{{ " images/icon.png" | relURL }}" type="image/png">
+</head>

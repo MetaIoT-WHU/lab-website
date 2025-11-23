@@ -1,0 +1,48 @@
+{{/* 1. 强制将 content (template.HTML) 转换为 String */}}
+{{ $rawContent := printf "%s" .Content }}
+
+{{/* 2. 清洗数据：Markdown 渲染器可能会把 HTML 注释包裹在 <p> 中，我们需要去掉它 */}}
+    {{ $cleanContent := replace $rawContent " <p></p>" "" }}
+
+{{/* 3. 分割字符串 */}}
+{{ $sections := split $cleanContent "" }}
+
+{{/* 4. 循环渲染 */}}
+{{ range $sections }}
+{{ $chunk := . }}
+{{/* 只有当内容不为空时才渲染 */}}
+{{ if gt (len (trim $chunk " \n\r")) 0 }}
+
+{{/* --- 正则提取属性 --- */}}
+
+{{/* 提取 Dark */}}
+{{ $dark := "" }}
+{{ $darkMatches := findRE `dark:\s*(.*?);` $chunk 1 }}
+{{ if gt (len $darkMatches) 0 }}
+{{ $dark = index $darkMatches 0 | replaceRE `dark:\s*(.*?);` "$1" }}
+{{ end }}
+
+{{/* 提取 Background */}}
+{{ $bg := "" }}
+{{ $bgMatches := findRE `background:\s*(.*?);` $chunk 1 }}
+{{ if gt (len $bgMatches) 0 }}
+{{ $bgRaw := index $bgMatches 0 | replaceRE `background:\s*(.*?);` "$1" }}
+{{ $bg = $bgRaw | relURL }}
+{{ end }}
+
+{{/* 提取 Size */}}
+{{ $size := "page" }}
+{{ $sizeMatches := findRE `size:\s*(.*?);` $chunk 1 }}
+{{ if gt (len $sizeMatches) 0 }}
+{{ $size = index $sizeMatches 0 | replaceRE `size:\s*(.*?);` "$1" }}
+{{ end }}
+
+{{/* --- 渲染 Section --- */}}
+{{/* 注意：这里我们不使用 safeHTML，因为我们已经手动处理了结构，但 chunk 本身是 HTML */}}
+<section class="background" data-size="{{ $size }}" {{ if or (eq $dark "true" ) (eq $dark "false" ) }}
+    data-dark="{{ $dark }}" {{ end }} {{ if ne $bg "" }} style="--image: url('{{ $bg }}')" {{ end }}>
+    {{ $chunk | safeHTML }}
+</section>
+
+{{ end }}
+{{ end }}

@@ -1,0 +1,106 @@
+.card {
+  // 修改：使用 flex 替代 inline-flex，配合 Grid 表现更好
+  display: flex; 
+  justify-content: space-between; // 确保内容撑开，按钮沉底
+  align-items: stretch;
+  flex-direction: column;
+  
+  // 这里保留原值作为默认值，但在 grid 中会被覆盖
+  width: 400px; 
+  max-width: 100%; // 防止在小屏幕溢出
+  margin: 20px;
+  
+  background: var(--background);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  
+  // 增加过渡动画
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card[data-style="project"] {
+  // 这里也保留，但同样会被 grid 覆盖
+  width: 350px; 
+}
+
+.card-image {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  display: block; // 防止图片底部有空隙
+  transition: transform 0.3s ease;
+}
+
+// 图片悬停微缩放效果
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; // 文字左对齐
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1; // 关键：让文字区域占据剩余空间
+}
+
+.card-text > * {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.card-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  font-size: 1.25rem; // 使用 rem 替代 larger
+  color: var(--primary); // 确保标题有颜色
+  text-decoration: none;
+  line-height: 1.3;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.card-title[data-style="project"] {
+  font-size: 1.1rem;
+}
+
+.card-subtitle {
+  margin-top: -10px !important;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.card-description {
+  font-family: var(--body);
+  line-height: 1.6;
+  // 优化：取消固定 min-height，改用 margin-bottom 把按钮顶下去，
+  // 但为了保持原版 1:1，我们还是保留 min-height，但设为 auto 以防内容过长
+  // min-height: 150px; 
+  font-size: 0.95rem;
+  flex-grow: 1; // 关键：让描述部分把按钮挤到最下面
+}
+
+// 按钮容器修正
+.button-wrapper {
+  margin-top: auto !important; // 强制按钮沉底
+  align-self: flex-end; // 按钮右对齐（或者根据你的设计左对齐）
+  width: auto !important;
+}

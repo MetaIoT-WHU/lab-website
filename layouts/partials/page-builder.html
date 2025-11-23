@@ -1,0 +1,105 @@
+{{ range .Params.sections }}
+{{ $section := . }}
+
+<section class="background" data-size="page" {{ if .dark }}data-dark="true" {{ end }} {{ if .background
+    }}style="--image: url('{{ .background | relURL }}')" {{ end }}>
+    {{/* 1. 标题 */}}
+    {{ if .title }}<h2 id="{{ .title | urlize }}">{{ .title }}</h2>{{ end }}
+
+    {{/* 2. Markdown 文本 */}}
+    {{ if .content }}{{ .content | markdownify }}{{ end }}
+
+    {{/* 3. 搜索栏 (如果有) */}}
+    {{ if .features.search }}
+    {{ partial "search-ui.html" .features }}
+    {{ end }}
+
+    {{/* 4. 数据处理逻辑 */}}
+    {{ if .source }}
+    {{ $items := slice }}
+
+    {{/* 获取数据 */}}
+    {{ if eq .source "data" }}
+    {{ $data := index site.Data .data }}
+    {{ if $data }}
+    {{ if .ids }}
+    {{/* ID 筛选模式 */}}
+    {{ range .ids }}
+    {{ $found := where $data "id" . }}
+    {{ if gt (len $found) 0 }}{{ $items = $items | append (index $found 0) }}{{ end }}
+    {{ end }}
+    {{ else if and .key .value }}
+    {{/* Key/Value 筛选模式 */}}
+    {{ $items = where $data .key .value }}
+    {{ $items = sort $items "date" "desc" }}
+    {{ else }}
+    {{/* 全部模式 */}}
+    {{ $items = $data }}
+    {{ $items = sort $items "date" "desc" }}
+    {{ end }}
+    {{ end }}
+    {{ else if eq .source "pages" }}
+    {{/* Pages 模式 */}}
+    {{ $p := site.GetPage .data }}
+    {{ if $p }}
+    {{ $items = where $p.Pages (printf "Params.%s" .key) .value }}
+    {{ $items = sort $items "Params.weight" }}
+    {{ end }}
+    {{ end }}
+
+    {{/* 5. 渲染逻辑 */}}
+    {{ if gt (len $items) 0 }}
+
+    <div {{ if .features.search }} id="searchable-grid" {{ end }}>
+
+        {{/* 分支 A: 按年份分组 (用于 Publications) */}}
+        {{ if .groupByYear }}
+        {{ $currentYear := "" }}
+        {{ range $items }}
+        {{ $thisYear := "" }}
+        {{ if .date }}{{ $thisYear = dateFormat "2006" .date }}{{ end }}
+        {{ if ne $thisYear $currentYear }}
+        {{ $currentYear = $thisYear }}
+        <h3 id="{{ $currentYear }}">{{ $currentYear }}</h3>
+        {{ end }}
+
+        {{/* 数据流是 Map，可以直接 merge */}}
+        {{ partial (printf "%s.html" $section.component) (merge . (dict "style" $section.style)) }}
+        {{ end }}
+
+        {{/* 分支 B: Member List (用于 Alumni) */}}
+        {{ else if eq $section.component "member-list" }}
+        <ul>
+            {{ range $items }}
+            {{/* 直接传 Page 对象，不需要 style */}}
+            {{ partial "member-list.html" . }}
+            {{ end }}
+        </ul>
+
+        {{/* 分支 C: 普通网格 (用于 Team Portraits / Home Cards) */}}
+        {{ else }}
+        <div {{ if ne $section.component "citation" }}class="grid" {{ end }}>
+            {{ range $items }}
+
+            {{/* [核心修复] 上下文构建逻辑 */}}
+            {{ $ctx := . }}
+
+            {{ if eq $section.source "pages" }}
+            {{/* 如果是 Page 对象，我们手动构造一个字典来传递 style，避免 merge 报错 */}}
+            {{ $ctx = dict "Title" .Title "Params" .Params "Permalink" .RelPermalink "style" $section.style }}
+            {{ else }}
+            {{/* 如果是 YAML Map，可以直接 merge */}}
+            {{ $ctx = merge . (dict "style" $section.style) }}
+            {{ end }}
+
+            {{ partial (printf "%s.html" $section.component) $ctx }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+    </div>
+    {{ end }}
+
+    {{ end }}
+</section>
+{{ end }}

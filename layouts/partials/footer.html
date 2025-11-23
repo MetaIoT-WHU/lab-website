@@ -1,0 +1,35 @@
+{{/* 1. 处理背景图逻辑 */}}
+{{/* 获取当前页面的 footer 参数，如果没有则用全局参数 */}}
+{{ $footerImage := .Params.footer | default site.Params.footer_image }}
+{{/* 将路径转换为相对 URL */}}
+{{ $bgImage := $footerImage | relURL }}
+
+{{/* 2. 处理 Dark Mode 逻辑 */}}
+{{/* 检查页面是否有 footer-dark 参数，如果没有则默认为 true (根据 Jekyll 逻辑推断) */}}
+{{ $isDark := .Params.footer_dark | default true }}
+
+<footer class="background" style="--image: url('{{ $bgImage }}')" {{ if or (eq $isDark true) (eq $isDark false) }}
+    data-dark="{{ $isDark }}" {{ end }} data-size="wide">
+    <div>
+        {{/* 注意：这里需要你在 hugo.toml 中配置 [params.links]
+        而不是直接写在顶层，方便迭代
+        */}}
+        {{ range $key, $val := site.Params.links }}
+        {{/* 调用 button 组件。
+        我们在下一步需要创建 layouts/partials/button.html
+        */}}
+        {{ partial "button.html" (dict "type" $key "link" $val "style" "bare") }}
+        {{ end }}
+    </div>
+
+    <div>
+        &copy; {{ now.Format "2006" }} {{ site.Title }}
+        &nbsp; | &nbsp;
+        <a href="https://github.com/weisgroup">
+            Lab Website Template
+        </a>
+    </div>
+
+    <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode"
+        oninput="onDarkToggleChange(event)">
+</footer>

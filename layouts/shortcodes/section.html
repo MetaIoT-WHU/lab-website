@@ -1,0 +1,13 @@
+{{/* 用法:
+{{< section dark="true" background="images/bg.webp" size="page">}}
+    Markdown 内容...
+    {{< /section>}}
+*/}}
+
+{{ $dark := .Get "dark" }}
+{{ $bg := .Get "background" }}
+{{ $size := .Get "size" | default "page" }}
+<section class="background" data-size="{{ $size }}" {{ if or (eq $dark "true" ) (eq $dark "false" )
+    }}data-dark="{{ $dark }}" {{ end }} {{ if $bg }}style="--image: url('{{ $bg | relURL }}')" {{ end }}>
+    {{ .Inner }}
+</section>

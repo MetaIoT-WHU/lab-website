@@ -1,0 +1,134 @@
+/* =========================================
+   Portrait (Team Member) Styles - 最终完美修复版
+   ========================================= */
+
+/* 1. 容器布局 (Flexbox 实现整体居中) */
+.grid.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* 整体居中 */
+
+  gap: 30px 40px;
+  /* 行距 40px, 列距 20px */
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* 2. [关键修复] 强制覆盖 grid.scss 中的 width: 100% !important */
+.grid.members-grid>* {
+  width: 175px !important;
+  /* 强制每个子元素宽度为 175px */
+  margin: 0 !important;
+  /* 清除外边距，由 gap 控制 */
+  flex-grow: 0;
+  /* 禁止拉伸 */
+  flex-shrink: 0;
+  /* 禁止压缩 */
+}
+
+/* 3. 卡片内部样式 */
+.portrait-wrapper {
+  width: 100%;
+  /* 填满上面设定的 175px */
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+/* 4. 图片样式 (4:3 比例) */
+.portrait-image {
+  width: 100%;
+  /* 填满 175px */
+  height: auto;
+  aspect-ratio: 3/4;
+  /* 1.33:1 */
+  object-fit: cover;
+  object-position: center top;
+  /* 对齐顶部 */
+
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 悬停效果 */
+.portrait:hover .portrait-image {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.portrait:hover .portrait-name {
+  color: var(--primary);
+}
+
+/* 5. 文字信息 */
+.portrait-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.portrait-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #333;
+  word-wrap: break-word;
+  /* 防止名字过长撑破 */
+}
+
+.portrait-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* 社交图标 */
+.portrait-social {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portrait-social .social-icon {
+  font-size: 0.9em;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.portrait-social .social-icon:hover {
+  color: var(--primary);
+}
+
+.member-list-item {
+  margin: 0px;
+  padding-left: 5px;
+}
+
+/* 移动端适配 */
+@media (max-width: 480px) {
+  .grid.members-grid {
+    gap: 20px 10px;
+  }
+
+  /* 手机上可以让卡片稍微小一点，或者保持两列 */
+  .grid.members-grid>* {
+    /* 使用 calc 保证手机上一定是两列，减去间隙 */
+    width: calc(50% - 10px) !important;
+  }
+}
