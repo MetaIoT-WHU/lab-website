@@ -17,7 +17,7 @@ load_dotenv()
 error = False
 
 # output citations file
-output_file = "_data/citations.yaml"
+output_file = "data/citations.yaml"
 
 
 log()
