@@ -7,7 +7,7 @@ theme = [] # 我们手动重构，不使用第三方主题包
 [markup.goldmark.renderer]
 unsafe = true
 
-# 对应 Jekyll 的 Syntax Highlighting
+
 [markup.highlight]
 style = "monokai" # Rouge 的替代品，风格可选
 lineNos = false
@@ -27,7 +27,3 @@ google_scholar = "YkD8hs0AAAAJ"
 
 # 菜单配置 (稍后我们会用到)
 [menu]
-
-# 对应 Jekyll 的 Collections
-# Hugo 默认把 content 下的一级目录作为 Section (类似 Collection)
-# 所以 members 和 posts 自动生效，不需要额外配置

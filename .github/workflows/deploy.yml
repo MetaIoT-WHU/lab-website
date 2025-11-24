@@ -47,6 +47,15 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Debug File System
+        run: |
+          echo "=== Checking Content Directory ==="
+          ls -R content/
+          echo "=== Checking Data Directory ==="
+          ls -R data/
+          echo "=== Checking Layouts Directory ==="
+          ls -R layouts/
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
