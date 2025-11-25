@@ -61,6 +61,7 @@
   type: conference
   title: 'SDDiff: Boost Radar Perception via Spatial-Doppler Diffusion'
   co-author: true
+  highlight: true
   date: '2025-08-23'
   authors:
   - Shengpeng Wang
@@ -224,6 +225,7 @@
   link: https://doi.org/g8tvpt
   type: conference
   co-author: true
+  highlight: true
   shortPublisher: ACM MobiCom'24
   buttons:
   - type: docs
@@ -279,6 +281,7 @@
   type: conference
   shortPublisher: ACM MobiCom'23
   co-author: true
+  highlight: true
   image: https://www.catalyzex.com/_next/image?url=https%3A%2F%2Fd3i71xaburhd42.cloudfront.net%2F531429cc78035c2fc43560d8a7dd09d93fd8b201%2F2-Figure1-1.png&w=384&q=75
   buttons:
   - type: docs
