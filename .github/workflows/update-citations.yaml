@@ -61,7 +61,7 @@ jobs:
         uses: tj-actions/verify-changed-files@v18
         with:
           files: |
-            _data/citations.yaml
+            data/citations.yaml
 
       - name: Commit updated citations to branch
         if: |

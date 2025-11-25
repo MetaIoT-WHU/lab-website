@@ -2,12 +2,12 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches:
-      - main  # 如果你的主分支叫 master，请在这里改为 master
-
-  # Allows you to run this workflow manually from the Actions tab
+  workflow_call:
+    inputs:
+      deploy:
+        required: false
+        type: boolean
+        default: true
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0 # 指定一个较新的版本
+      HUGO_VERSION: 0.152.2
     steps:
       - name: Install Hugo CLI
         run: |
@@ -46,6 +46,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          ref: 'main' 
+          fetch-depth: 0
 
       - name: Debug File System
         run: |
