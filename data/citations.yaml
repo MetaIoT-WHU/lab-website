@@ -18,12 +18,8 @@
   shortPublisher: IEEE TMC'25
   plugin: sources.py
   file: sources.yaml
-- url: https://metaiot.group/publication/paper/10.1212.xxxx
-  type: conference
+- id: doi:10.1145/3680207.3765236
   title: 'GPSoil: Towards low-cost soil moisture sensing using GNSS signals'
-  co-author: true
-  highlight: true
-  date: '2025-11-22'
   authors:
   - Huixin Dong
   - Jingqi Lin
@@ -32,14 +28,45 @@
   - Lili Qiu
   - Jie Xiong
   - Wei Wang
-  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
+  publisher: Proceedings of the 31st Annual International Conference on Mobile Computing
     and Networking
+  date: '2025-11-03'
+  link: https://doi.org/hbckw6
+  type: conference
+  co-author: true
+  highlight: true
   shortPublisher: ACM MobiCom'25
   tags:
   - GPS Sensing
   plugin: sources.py
   file: sources.yaml
-- url: https://iccv.thecvf.com/virtual/2025/poster/2131
+- id: doi:10.1145/3680207.3723465
+  title: 'PassiveBLE: Towards Fully Commodity Compatible BLE Backscatter'
+  authors:
+  - Huixin Dong
+  - Yijie Wu
+  - Feiyu Li
+  - Wei Kuang
+  - Yuan He
+  - Qian Zhang
+  - Wei Wang
+  publisher: Proceedings of the 31st Annual International Conference on Mobile Computing
+    and Networking
+  date: '2025-11-03'
+  link: https://doi.org/hbckw7
+  type: conference
+  co-author: true
+  highlight: true
+  shortPublisher: ACM MobiCom'25
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/pdf/2503.11490
+  tags:
+  - BLE Backscatter
+  plugin: sources.py
+  file: sources.yaml
+- url: https://openaccess.thecvf.com/content/ICCV2025/html/Wang_S3E_Self-Supervised_State_Estimation_for_Radar-Inertial_System_ICCV_2025_paper.html
   type: conference
   title: 'S^3E: Self-Supervised State Estimation for Radar-Inertial System'
   co-author: true
@@ -57,12 +84,8 @@
   - ICCV
   plugin: sources.py
   file: sources.yaml
-- url: https://metaiot.group/publication/paper/10.1100.xxxx
-  type: conference
-  title: 'SDDiff: Boost Radar Perception via Spatial-Doppler Diffusion'
-  co-author: true
-  highlight: true
-  date: '2025-08-23'
+- id: doi:10.24963/ijcai.2025/979
+  title: 'SDDiff: Boosting Radar Perception via Spatial-Doppler Diffusion'
   authors:
   - Shengpeng Wang
   - Xin Luo
@@ -70,6 +93,11 @@
   - Wei Wang
   publisher: Proceedings of the Thirty-Fourth International Joint Conference on Artificial
     Intelligence
+  date: '2025-09-01'
+  link: https://doi.org/hbckw8
+  type: conference
+  co-author: true
+  highlight: true
   shortPublisher: IJCAI'25
   buttons:
   - type: docs
@@ -79,44 +107,20 @@
   - mmWave Radar
   plugin: sources.py
   file: sources.yaml
-- url: https://metaiot.group/publication/paper/10.1125.xxxx
-  type: conference
-  title: 'PassiveBLE: Towards Fully Commodity-Compatible BLE Backscatter'
-  co-author: true
-  highlight: true
-  date: '2025-11-22'
-  authors:
-  - Huixin Dong
-  - Yijie Wu
-  - Feiyu Li
-  - Wei Kuang
-  - Yuan He
-  - Qian Zhang
-  - Wei Wang
-  publisher: Proceedings of the 31th Annual International Conference on Mobile Computing
-    and Networking
-  shortPublisher: ACM MobiCom'25
-  buttons:
-  - type: docs
-    text: PDF
-    link: https://arxiv.org/pdf/2503.11490
-  tags:
-  - BLE Backscatter
-  plugin: sources.py
-  file: sources.yaml
-- url: https://metaiot.group/publication/paper/10.1145.xxx
-  type: conference
-  title: 'PDStream: Slashing Long-Tail Delay in Interactive Video Streaming via Pseudo-Dua
+- id: doi:10.1109/INFOCOM55648.2025.11044674
+  title: 'PDStream: Slashing Long- Tail Delay in Interactive Video Streaming via Pseudo-Dual
     Streaming'
-  co-author: true
-  date: '2025-05-22'
   authors:
   - Xuedou Xiao
   - Yingying Zuo
   - Mingxuan Yan
   - Kezhong Liu
   - Wei Wang
-  publisher: IEEE Conference on Computer Communications
+  publisher: IEEE INFOCOM 2025 - IEEE Conference on Computer Communications
+  date: '2025-05-19'
+  link: https://doi.org/hbckw9
+  type: conference
+  co-author: true
   shortPublisher: IEEE INFOCOM'25
   buttons:
   - type: docs
@@ -126,17 +130,18 @@
   - Video Streaming
   plugin: sources.py
   file: sources.yaml
-- url: https://metaiot.group/publication/paper/10.1145/3636534.xxx
-  type: conference
+- id: doi:10.1109/INFOCOM55648.2025.11044604
   title: Improving Multi-Vehicle Perception Fusion with Millimeter-Wave Radar Assistance
-  co-author: true
-  date: '2025-05-22'
   authors:
   - Zhiqing Luo
   - Yi Wang
   - Yingying He
   - Wei Wang
-  publisher: IEEE Conference on Computer Communications
+  publisher: IEEE INFOCOM 2025 - IEEE Conference on Computer Communications
+  date: '2025-05-19'
+  link: https://doi.org/hbckxb
+  type: conference
+  co-author: true
   shortPublisher: IEEE INFOCOM'25
   tags:
   - Cooperative Perception
