@@ -4,7 +4,7 @@ group: student
 role: Master
 year: 2024
 image: /images/members/2024/Master/YuxuanWei.webp
-description: Master Student
+description: Master Student 2024
 website: ""
 links:
   email: 19939895296@163.com
