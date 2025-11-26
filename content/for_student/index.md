@@ -13,14 +13,14 @@ intro:
 ---
 
 ## Prospective Students
-
+<!-- 
 We are looking for self-motivated **PhD/Master/Undergraduate students** who are interested in:
 
 * **Wireless Sensing & Networking** (e.g., mmWave, LoRa, Backscatter)
 * **Mobile Computing** & **Embedded AI**
 * **Smart Health** & **HCI**
 
-If you are interested in working with us, please send your CV and transcripts to [Prof. Wei Wang](mailto:wangw@whu.edu.cn).
+If you are interested in working with us, please send your CV and transcripts to [Prof. Wei Wang](mailto:wangw@whu.edu.cn). -->
 
 ---
 <!-- 
