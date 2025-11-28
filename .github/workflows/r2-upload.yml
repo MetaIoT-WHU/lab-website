@@ -34,4 +34,4 @@ jobs:
           RCLONE_CONFIG_MYR2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
         run: |
           # 仅同步 static 目录到 Bucket 根目录
-          rclone sync ./static myr2:${{ secrets.R2_BUCKET_NAME }}/metaiot --checksum --verbose --exclude ".DS_Store"
+          rclone copy ./static myr2:${{ secrets.R2_BUCKET_NAME }}/metaiot --checksum --verbose --exclude ".DS_Store"
