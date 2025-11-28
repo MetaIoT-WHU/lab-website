@@ -15,7 +15,7 @@ on:
       cdn_url:
         required: false
         type: string
-        default: "https://fast-cdn.metaiot.group"
+        default: ""
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

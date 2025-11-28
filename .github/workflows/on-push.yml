@@ -21,13 +21,34 @@ permissions:
   pull-requests: write
 
 jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    # 将输出传递给后续 Job
+    outputs:
+      citations_changed: ${{ steps.filter.outputs.citations }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            citations:
+              - 'data/sources.yaml'
+
   update-citations:
-    # skip first run because nothing enabled or setup yet
-    if: github.run_number != 1
+    # 依赖检查任务
+    needs: check-changes 
+    # 逻辑说明：
+    # 1. 不是第一次运行 (保留你原有的逻辑)
+    # 2. 并且：(文件确实发生了变化 或者 是手动触发)
+    #    如果是手动触发，通常意味着用户想强制跑一遍，所以加上 || event_name == 'workflow_dispatch'
+    if: >
+      github.run_number != 1 && 
+      (needs.check-changes.outputs.citations_changed == 'true' || github.event_name == 'workflow_dispatch')
     uses: ./.github/workflows/update-citations.yaml
     with:
       open-pr: false 
-    secrets: inherit 
+    secrets: inherit
 
   # --- 可选任务：上传资源 ---
   # 只有当 (手动触发且勾选了CDN) 或者 (自动Push) 时运行
@@ -45,5 +66,5 @@ jobs:
     with:
       deploy: true
       enable_cdn: ${{ inputs.use_cdn || (github.event_name == 'push') }}
-      cdn_url: "https://fast-cdn.metaiot.group"
+      cdn_url: "https://fast-cdn.metaiot.group/metaiot"
     secrets: inherit
