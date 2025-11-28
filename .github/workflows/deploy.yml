@@ -8,7 +8,7 @@ on:
         required: false
         type: boolean
         default: true
-        enable_cdn:
+      enable_cdn:
         required: false
         type: boolean
         default: false
