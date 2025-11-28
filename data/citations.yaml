@@ -235,10 +235,10 @@
   buttons:
   - type: docs
     text: PDF
-    link: files/paper/mobicom24-GPSense.pdf
+    link: https://metaiot.group/publication/paper/mobicom24-GPSense.pdf
   - type: slides
     text: SLIDES
-    link: files/slides/MobiCom2024_GPSense_slides.pdf
+    link: /publication/slides/MobiCom2024_GPSense_slides.pdf
   - type: video
     text: VIDEO
     link: https://cdn.metaiot.group/metaiot/video/Mobicom24Demo.mp4
