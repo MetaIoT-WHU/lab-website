@@ -8,6 +8,14 @@ on:
         required: false
         type: boolean
         default: true
+        enable_cdn:
+        required: false
+        type: boolean
+        default: false
+      cdn_url:
+        required: false
+        type: string
+        default: "https://fast-cdn.metaiot.group"
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -74,6 +82,17 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      
+      # --- 仅在开启 CDN 时运行替换逻辑 ---
+      - name: Apply CDN URL Replacement
+        if: ${{ inputs.enable_cdn == true && inputs.cdn_url != '' }}
+        env:
+          CDN_URL: ${{ inputs.cdn_url }}
+        run: |
+          echo "Run CDN replacement..."
+          # 确保你的 python 脚本已提交到仓库根目录
+          python3 cdn_replace.py
+      # ----------------------------------
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

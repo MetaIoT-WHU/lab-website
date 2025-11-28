@@ -1,0 +1,37 @@
+name: Helper - Sync to R2
+on:
+  workflow_call:
+    secrets:
+      R2_ACCESS_KEY_ID:
+        required: true
+      R2_SECRET_ACCESS_KEY:
+        required: true
+      R2_ENDPOINT:
+        required: true
+      R2_BUCKET_NAME:
+        required: true
+
+jobs:
+  sync-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Rclone
+        uses: animus-coop/setup-rclone@v1
+        with:
+          rclone_version: v1.66.0
+
+      - name: Sync Static Assets
+        env:
+          RCLONE_CONFIG_MYR2_TYPE: s3
+          RCLONE_CONFIG_MYR2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_MYR2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_MYR2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_MYR2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        run: |
+          # 仅同步 static 目录到 Bucket 根目录
+          rclone sync ./static myr2:${{ secrets.R2_BUCKET_NAME }} --checksum --verbose --exclude ".DS_Store"

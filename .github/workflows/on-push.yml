@@ -8,6 +8,11 @@ on:
 
   # run if user manually requests it
   workflow_dispatch:
+    inputs:
+      use_cdn:
+        description: 'Enable CDN Acceleration?'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -24,10 +29,21 @@ jobs:
       open-pr: false 
     secrets: inherit 
 
-  build-site:
+  # --- 可选任务：上传资源 ---
+  # 只有当 (手动触发且勾选了CDN) 或者 (自动Push) 时运行
+  # 如果你想 Push 时默认不跑 CDN，把 || true 改成 || false
+  upload-assets:
     needs: update-citations
+    if: always() && (inputs.use_cdn == true || github.event_name == 'push')
+    uses: ./.github/workflows/r2-upload.yml
+    secrets: inherit # 必须传递 secrets 给上传脚本
+
+  build-site:
+    needs: [update-citations, upload-assets]
     if: always() && (needs.update-citations.result == 'success' || needs.update-citations.result == 'skipped')
     uses: ./.github/workflows/deploy.yml
     with:
       deploy: true
+      enable_cdn: ${{ inputs.use_cdn || (github.event_name == 'push') }}
+      cdn_url: "https://fast-cdn.metaiot.group"
     secrets: inherit

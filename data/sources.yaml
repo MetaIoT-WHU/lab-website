@@ -193,7 +193,7 @@
       link: https://arxiv.org/pdf/2304.07572
     - type: slides
       text: SLIDES
-      link: /publication/slides/DongGPSMirror.pdf
+      link: files/slides/DongGPSMirror.pdf
   tags:
     - Backscatter Network
     - GPS Sensing
