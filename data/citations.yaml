@@ -245,7 +245,7 @@
   buttons:
   - type: docs
     text: PDF
-    link: files/paper/mobicom24-GPSense.pdf
+    link: /files/paper/mobicom24-GPSense.pdf
   - type: slides
     text: SLIDES
     link: /files/slides/MobiCom2024_GPSense_slides.pdf
