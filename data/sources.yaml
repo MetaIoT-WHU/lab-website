@@ -16,7 +16,7 @@
   #     text: VIDEO
   #     link: https://cdn.metaiot.group/metaiot/video/Mobicom24Demo.mp4
 #     - type: website
-#       text: WEBSITE
+#       text: Project
 #       link: http://manubot.org/
 #   tags:
 #     - open science
@@ -75,10 +75,13 @@
     - Wei Wang
   publisher: International Conference on Computer Vision, ICCV 2025
   shortPublisher: ICCV'25
-  # buttons:
-  #   - type: docs
-  #     text: PDF
-  #     link: https://arxiv.org/abs/2506.16936
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://arxiv.org/abs/2506.16936
+    - type: website
+      text: Project
+      link: https://stellaresti.github.io/sddiff
   tags:
     - mmWave Radar
     - ICCV
@@ -93,6 +96,9 @@
     - type: docs
       text: PDF
       link: https://arxiv.org/abs/2506.16936
+    - type: website
+      text: Project
+      link: https://stellaresti.github.io/sddiff
   tags:
     - mmWave Radar
 
@@ -155,13 +161,13 @@
   buttons:
     - type: docs
       text: PDF
-      link: files/paper/mobicom24-GPSense.pdf
+      link: /files/paper/mobicom24-GPSense.pdf
     - type: slides
       text: SLIDES
-      link: files/slides/MobiCom2024_GPSense_slides.pdf
+      link: /files/slides/MobiCom2024_GPSense_slides.pdf
     - type: video
       text: VIDEO
-      link: files/video/Mobicom24Demo.mp4
+      link: /files/video/Mobicom24Demo.mp4
   tags:
     - GPS Sensing
   
@@ -193,7 +199,7 @@
       link: https://arxiv.org/pdf/2304.07572
     - type: slides
       text: SLIDES
-      link: files/slides/DongGPSMirror.pdf
+      link: /files/slides/DongGPSMirror.pdf
   tags:
     - Backscatter Network
     - GPS Sensing

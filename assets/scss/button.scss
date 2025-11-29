@@ -84,6 +84,41 @@ button {
   }
 }
 
+.button[data-style="github"] {
+  line-height: 2em;
+  height: 1.8em;
+  background: #343a40;
+  /* 深灰 */
+  border-color: #2d3238;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #fff;
+
+  &:hover {
+    background-color: #23272b;
+    /* 近黑色 */
+    border-color: #1d2124;
+  }
+}
+
+.button[data-style="website"] {
+  line-height: 2em;
+  height: 1.8em;
+  background: #5bc0de;
+  /* 青色 */
+  border-color: #46b8da;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #fff;
+  /* 确保文字颜色是白色的 */
+
+  &:hover {
+    background-color: #31b0d5;
+    /* 深青色 */
+    border-color: #269abc;
+  }
+}
+
 .button[data-style="slides"] {
   line-height: 2em;
   height: 1.8em;

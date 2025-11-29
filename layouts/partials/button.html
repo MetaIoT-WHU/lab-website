@@ -1,4 +1,4 @@
-{{/* 接收参数: dict "type" "email" "text" "..." "link" "..." "style" "..." */}}
+{{/* Recive Param: dict "type" "email" "text" "..." "link" "..." "style" "..." */}}
 
 {{ $type := .type }}
 {{ $dataDefaults := dict }}
@@ -6,18 +6,16 @@
 {{ $dataDefaults = index site.Data.types $type | default dict }}
 {{ end }}
 
-{{/* 优先使用传入参数，其次使用 defaults */}}
 {{ $link := .link | default $dataDefaults.link }}
 {{ $icon := .icon | default $dataDefaults.icon }}
 {{ $text := .text | default $dataDefaults.text }}
 {{ $tooltip := .tooltip | default $dataDefaults.tooltip }}
 
-{{/* [修复] style 逻辑：优先用传入的 .style，如果没有则用 defaults，最后才默认为空字符串 (而不是 bare) */}}
 {{ $style := .style | default $dataDefaults.style | default "" }}
 
 {{ if or $link $icon $text }}
 <div class="button-wrapper">
-    <a class="button" {{/* [修复] 移除 relURL，防止破坏 mailto 和 https 链接 */}} {{ if $link }}href="{{ $link | safeURL }}" {{ end
+    <a class="button" {{ if $link }}href="{{ $link | safeURL }}" {{ end
         }} {{ if $tooltip }}data-tooltip="{{ $tooltip }}" {{ end }} data-style="{{ $style }}" {{ if .flip }}data-flip{{
         end }} aria-label="{{ $tooltip | default $text | default " button" }}" target="_blank">
         {{ if $icon }}
