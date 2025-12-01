@@ -66,5 +66,5 @@ jobs:
     with:
       deploy: true
       enable_cdn: ${{ inputs.use_cdn || (github.event_name == 'push') }}
-      cdn_url: "https://fast-cdn.metaiot.group/metaiot"
+      cdn_url: "https://cdn.metaiot.group/metaiot"
     secrets: inherit
