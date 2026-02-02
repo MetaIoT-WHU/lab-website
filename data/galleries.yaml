@@ -1,4 +1,18 @@
 events:
+  - title: "Team building"
+    date: 2025-11-08
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-01-05_team_building.webp
+
+  - title: "Group dinner"
+    date: 2025-11-08
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-01-30_Group_Dinner.webp
+      
   - title: "Hosted RFCom workshop@MobiCom 2025"
     date: 2025-11-08
     group: conference
