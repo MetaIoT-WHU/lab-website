@@ -6,6 +6,13 @@ events:
     images:
       - images/galleries/2026-01-30_team_building.webp
 
+  - title: "AAAI26@Singapore, Singapore"
+    date: 2026-01-23
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2026-01-23_AAAI26_Singapore.webp
+
   - title: "Group dinner"
     date: 2026-01-05
     group: conference
