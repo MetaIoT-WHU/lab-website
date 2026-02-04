@@ -41,7 +41,7 @@
   date: '2026-02-01'
   link: https://doi.org/g987sm
   type: journal
-  shortPublisher: IEEE TMC'25
+  shortPublisher: IEEE TMC'26
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1145/3680207.3765236
