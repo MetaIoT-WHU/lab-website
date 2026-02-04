@@ -54,15 +54,15 @@
     - mmWave Radar
     - AAAI
 
+# 2025 Mitigating Interference for Automotive Millimeter-wave Radar Perception in Dense Traffic Scenarios
+- id: doi:10.1109/tmc.2025.3610963
+  type: journal
+  shortPublisher: IEEE TMC'26
 
 # #############################################################
 # ########################### 2025 ############################
 # #############################################################
 
-# 2025 Mitigating Interference for Automotive Millimeter-wave Radar Perception in Dense Traffic Scenarios
-- id: doi:10.1109/tmc.2025.3610963
-  type: journal
-  shortPublisher: IEEE TMC'25
 
 # GPSoil: Towards low-cost soil moisture sensing using GNSS signals
 - id: doi:10.1145/3680207.3765236
