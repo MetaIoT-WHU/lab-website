@@ -28,7 +28,7 @@
 # #############################################################
 
 
-# SE: Self-Supervised State Estimation for Radar-Inertial System
+# RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion
 - url: https://royaptx4869.github.io/RaLD/
   type: conference
   title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
@@ -53,7 +53,6 @@
   tags:
     - mmWave Radar
     - AAAI
-
 
 
 # #############################################################
