@@ -9,3 +9,8 @@ Thumbs.db
 
 # Node
 node_modules
+
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
