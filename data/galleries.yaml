@@ -1,5 +1,13 @@
 events:
-  - title: "Team building"
+
+  - title: "Songshan Lake@Huawei, Dongguan"
+    date: 2026-01-30
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-02-04_songshan.webp
+      
+  - title: "Team building"  
     date: 2026-01-30
     group: conference
     description: We .

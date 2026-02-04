@@ -28,6 +28,32 @@
 # #############################################################
 
 
+# SE: Self-Supervised State Estimation for Radar-Inertial System
+- url: https://royaptx4869.github.io/RaLD/
+  type: conference
+  title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
+  co-author: true
+  highlight: true
+  date: 2026-01-23
+  authors:
+    - Ruijie Zhang
+    - Bixin Zeng
+    - Shengpeng Wang
+    - Fuhui Zhou
+    - Wei Wang
+  publisher: The 40th Annual AAAI Conference on Artificial Intelligence
+  shortPublisher: AAAI'26
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://arxiv.org/pdf/2511.07067
+    - type: website
+      text: Project
+      link: https://royaptx4869.github.io/RaLD/
+  tags:
+    - mmWave Radar
+    - AAAI
+
 
 
 # #############################################################
