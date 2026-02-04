@@ -1,7 +1,33 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- url: https://royaptx4869.github.io/RaLD/
+  type: conference
+  title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
+  co-author: true
+  highlight: true
+  date: '2026-01-23'
+  authors:
+  - Ruijie Zhang
+  - Bixin Zeng
+  - Shengpeng Wang
+  - Fuhui Zhou
+  - Wei Wang
+  publisher: The 40th Annual AAAI Conference on Artificial Intelligence
+  shortPublisher: AAAI'26
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/pdf/2511.07067
+  - type: website
+    text: Project
+    link: https://royaptx4869.github.io/RaLD/
+  tags:
+  - mmWave Radar
+  - AAAI
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1109/tmc.2025.3610963
-  title: Mitigating Interference for Automotive Millimeter-wave Radar Perception in
+  title: Mitigating Interference for Automotive Millimeter-Wave Radar Perception in
     Dense Traffic Scenarios
   authors:
   - Wei Wang
@@ -12,7 +38,7 @@
   - Kai Luo
   - Da Chen
   publisher: IEEE Transactions on Mobile Computing
-  date: '2025-01-01'
+  date: '2026-02-01'
   link: https://doi.org/g987sm
   type: journal
   shortPublisher: IEEE TMC'25
