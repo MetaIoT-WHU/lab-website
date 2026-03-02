@@ -18,7 +18,8 @@
 
 <header class="background" style="--image: url('{{ $bgImage }}')" {{ if or (eq $isDark true) (eq $isDark false) }}
     data-dark="{{ $isDark }}" {{ end }} {{ if .IsHome }} data-big {{ end }}>
-    <a href="{{ site.Home.RelPermalink }}" class="home">
+    {{/* 强制 Logo 链接回到英文版主页 (根目录) */}}
+    <a href="{{ "/" | relURL }}" class="home">
         {{ if ne $logo "" }}
         <span class="logo">
             {{ if $isSvg }}

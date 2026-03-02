@@ -1,9 +1,30 @@
 baseURL = "https://metaiot.group/" # 请替换为你的实际域名
-languageCode = "en-us"
+# languageCode = "en-us" # 移除单独的 languageCode，移入下方 languages 块
 title = "MetaIoT"
-theme = [] # 我们手动重构，不使用第三方主题包
+theme = [] 
 
-# 启用内联 HTML (因为你的 Markdown 可能包含 HTML 标签)
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+    title = "MetaIoT"
+    [languages.en.params]
+      subtitle = "Welcome to MetaIoT Lab."
+      description = "We create the next generation of intelligent wireless systems for communication and sensing with applications in autonomous systems, mixed reality, and IoT."
+
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-cn"
+    weight = 2
+    title = "MetaIoT"
+    [languages.zh.params]
+      subtitle = "欢迎来到 MetaIoT 实验室"
+      description = "我们致力于研发下一代智能无线通信与感知系统，应用于自主系统、混合现实和物联网等领域。"
+
+# 启用内联 HTML 
 [markup.goldmark.renderer]
 unsafe = true
 

@@ -9,19 +9,20 @@ header_dark: true
 intro:
   title: "For Students"
   icon: "fa-solid fa-graduation-cap"
-  content: "Information for prospective students interested in joining MetaIoT Lab."
+  content: "Information for prospective students interested in joining MetaIoT Lab. "
 ---
 
+**中文版本招生信息, 请点击[这里](/zh/for_student/).**
 ## Prospective Students
 
 We are always looking for self-motivated **PhD/Master/Undergraduate students** to join us. Our research topics include but are not limited to:
 
-* **Wireless Sensing** & **Networking** (e.g., mmWave, LoRa, Backscatter)
+* **AI+Hardware** & **Embedded AI**
 * **Mobile Computing** & **AIoT**
-* **Spatial Perception and Intelligence** for **Embodied AI**
-* **Smart Health** & **HCI**
+* **Embodied AI**，**Spatial Perception and Intelligence**  
+* **AI for Health**
 
-
+s
 You can find more information about our research on the [HOMEPAGE](../) and the [PUBLICATION](../publication/index.md) page. If you are interested in the fields above and would like to consider working with us, please send your CV and transcripts to [Prof. Wei Wang](mailto:wangw@whu.edu.cn).
 
 ---
