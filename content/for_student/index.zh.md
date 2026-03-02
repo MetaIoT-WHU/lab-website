@@ -13,7 +13,7 @@ intro:
 
 <!-- ## 招生信息 -->
 
-> **[English Version](/for_student/)**
+> **[English Version](/../for_student/)**
 
 我们一直在寻找积极主动的**博士/硕士/本科生**加入我们。我们的研究方向包括但不限于：
 
