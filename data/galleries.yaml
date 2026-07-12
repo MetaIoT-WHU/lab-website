@@ -13,6 +13,13 @@ events:
     description: We .
     images:
       - images/galleries/2026-06-24-VIVO.webp
+
+  - title: "Field trip@Huangping, Qiandongnan"
+    date: 2026-06-22
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-06-22_Guizhou.webp
   
   - title: "Graduation dinner 2026"
     date: 2026-06-15
