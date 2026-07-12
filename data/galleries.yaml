@@ -21,6 +21,13 @@ events:
     images:
       - images/galleries/2026-06-22_Guizhou.webp
   
+  - title: "Graduates of 2026"
+    date: 2026-06-18
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2026-06-18_Graduates.webp
+
   - title: "Graduation dinner 2026"
     date: 2026-06-15
     group: conference
