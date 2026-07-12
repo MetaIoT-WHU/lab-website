@@ -1,6 +1,32 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- url: https://royaptx4869.github.io/RaLD/
+- url: https://openaccess.thecvf.com/content/CVPR2026/html/Wang_RaUF_Learning_the_Spatial_Uncertainty_Field_of_Radar_CVPR_2026_paper.html
+  type: conference
+  title: 'RaUF: Learning the Spatial Uncertainty Field of Radar'
+  co-author: true
+  highlight: true
+  date: '2026-06-07'
+  authors:
+  - Shengpeng Wang
+  - Kuangyu Wang
+  - Wei Wang
+  publisher: The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026
+  shortPublisher: CVPR'26 highlight
+  buttons:
+  - type: docs
+    text: PDF
+    link: https://arxiv.org/abs/2603.01026v1
+  - type: website
+    text: Project
+    link: https://metaiot.group/rauf/
+  tags:
+  - mmWave Radar
+  - CVPR
+  plugin: sources.py
+  file: sources.yaml
+
+
+- id: doi:10.1109/tmc.2025.3610963
   type: conference
   title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
   co-author: true
