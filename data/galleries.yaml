@@ -1,5 +1,40 @@
 events:
 
+  - title: "With Turing Award laureate Bob Metcalfe@ACM TURC 2026, Hangzhou"
+    date: 2026-06-24
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-07-12_BobMetcalfe.webp
+
+  - title: "vivo Headquarters@vivo, Shenzhen"
+    date: 2026-06-24
+    group: conference
+    description: We .
+    images:
+      - images/galleries/2026-06-24-VIVO.webp
+  
+  - title: "Graduation dinner 2026"
+    date: 2022-06-15
+    group: conference
+    description: We.
+    images:
+        - images/galleries/2026-06-15_Graduation_dinner.webp
+
+  - title: "Group camping in the Heart Valley Resort."
+    date: 2026-06-07
+    group: conference
+    description: "Team building and camping at the resort."
+    images:
+      - images/galleries/2026-06-07_GroupCamping.webp
+
+  - title: "Biu biu biu! Lock and load for the team battle."
+    date: 2024-06-07
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2026-06-07_GroupCamping-CS.webp
+
   - title: "Songshan Lake@Huawei, Dongguan"
     date: 2026-02-04
     group: conference
