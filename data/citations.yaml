@@ -1,44 +1,40 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- url: https://openaccess.thecvf.com/content/CVPR2026/html/Wang_RaUF_Learning_the_Spatial_Uncertainty_Field_of_Radar_CVPR_2026_paper.html
+- url: https://eccv.ecva.net/virtual/2026/poster/4409
   type: conference
-  title: 'RaUF: Learning the Spatial Uncertainty Field of Radar'
-  co-author: true
-  highlight: true
-  date: '2026-06-07'
+  title: Mitigating Radar-Inertial Calibration Ambiguities via SO(3) Manifold Steering
   authors:
+  - Chunshen Li
   - Shengpeng Wang
-  - Kuangyu Wang
+  - Zitao Ye
   - Wei Wang
-  publisher: The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026
-  shortPublisher: CVPR'26 highlight
+  publisher: European Conference on Computer Vision, ECCV 2026
+  date: '2026-08-17'
+  co-author: true
+  shortPublisher: ECCV'26
   buttons:
   - type: docs
     text: PDF
-    link: https://arxiv.org/abs/2603.01026v1
-  - type: website
-    text: Project
-    link: https://metaiot.group/rauf/
+    link: https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5786.pdf
   tags:
   - mmWave Radar
-  - CVPR
+  - ECCV
   plugin: sources.py
   file: sources.yaml
-
-
-- id: doi:10.1109/tmc.2025.3610963
-  type: conference
+- id: doi:10.1609/aaai.v40i22.38946
   title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
-  co-author: true
-  highlight: true
-  date: '2026-01-23'
   authors:
   - Ruijie Zhang
   - Bixin Zeng
   - Shengpeng Wang
   - Fuhui Zhou
   - Wei Wang
-  publisher: The 40th Annual AAAI Conference on Artificial Intelligence
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  date: '2026-03-14'
+  link: https://doi.org/hckt7h
+  type: conference
+  co-author: true
+  highlight: true
   shortPublisher: AAAI'26
   buttons:
   - type: docs
@@ -125,18 +121,20 @@
   - BLE Backscatter
   plugin: sources.py
   file: sources.yaml
-- url: https://openaccess.thecvf.com/content/ICCV2025/html/Wang_S3E_Self-Supervised_State_Estimation_for_Radar-Inertial_System_ICCV_2025_paper.html
-  type: conference
-  title: 'S^3E: Self-Supervised State Estimation for Radar-Inertial System'
-  co-author: true
-  highlight: true
-  date: '2025-10-22'
+- id: doi:10.1109/ICCV51701.2025.02477
+  title: "S\n                    <sup>3</sup>\n                    E: Self-Supervised\
+    \ State Estimation for Radar-Inertial System"
   authors:
   - Shengpeng Wang
   - Yulong Xie
   - Qing Liao
   - Wei Wang
-  publisher: International Conference on Computer Vision, ICCV 2025
+  publisher: 2025 IEEE/CVF International Conference on Computer Vision (ICCV)
+  date: '2025-10-22'
+  link: https://doi.org/hckt7j
+  type: conference
+  co-author: true
+  highlight: true
   shortPublisher: ICCV'25
   buttons:
   - type: docs
@@ -1350,7 +1348,7 @@
   - Lin Yang
   - Wei Wang
   - Qian Zhang
-  publisher: Proceedings of the 14th ACM Conference on Embedded Network Sensor Systems
+  publisher: Proceedings of the 14th ACM Conference on Embedded Networked Sensor Systems
     CD-ROM
   date: '2016-11-14'
   link: https://doi.org/g737xb
