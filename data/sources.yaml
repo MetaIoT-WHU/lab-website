@@ -49,6 +49,27 @@
     - mmWave Radar
     - ECCV
 
+# RaUF: Learning the Spatial Uncertainty Field of Radar
+- url: https://openaccess.thecvf.com/content/CVPR2026/html/Wang_RaUF_Learning_the_Spatial_Uncertainty_Field_of_Radar_CVPR_2026_paper.html
+  type: conference
+  title: 'RaUF: Learning the Spatial Uncertainty Field of Radar'
+  authors:
+    - Shengpeng Wang
+    - Kuangyu Wang
+    - Wei Wang
+  publisher: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  date: 2026-06-01
+  co-author: true
+  highlight: true
+  shortPublisher: CVPR'26 Highlight
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_RaUF_Learning_the_Spatial_Uncertainty_Field_of_Radar_CVPR_2026_paper.pdf
+  tags:
+    - mmWave Radar
+    - CVPR
+
 # RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion
 - id: doi:10.1609/aaai.v40i22.38946
   type: conference
