@@ -1,5 +1,26 @@
 events:
 
+  - title: "Guiyang, Guizhou"
+    date: 2026-09-22
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2026-09-22-guizhou.jpg
+
+  - title: "Apple Hardware Engineers Visit HUST"
+    date: 2026-09-20
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2026-09-20-Apple.webp
+
+  - title: "ECCV 26@Malmö, Sweden"
+    date: 2026-09-10
+    group: conference
+    description: We.
+    images:
+      - images/galleries/2026-09-10-ECCV26.jpg
+
   - title: "With Turing Award laureate Bob Metcalfe@ACM TURC 2026, Hangzhou"
     date: 2026-07-12
     group: conference

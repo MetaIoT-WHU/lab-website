@@ -28,20 +28,32 @@
 # #############################################################
 
 
-# RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion
-- url: https://royaptx4869.github.io/RaLD/
+# RadarCalib: Mitigating Radar-Inertial Calibration Ambiguities via SO(3) Manifold Steering
+- url: https://eccv.ecva.net/virtual/2026/poster/4409
   type: conference
-  title: 'RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion'
+  title: 'Mitigating Radar-Inertial Calibration Ambiguities via SO(3) Manifold Steering'
+  authors:
+    - Chunshen Li
+    - Shengpeng Wang
+    - Zitao Ye
+    - Wei Wang
+  publisher: European Conference on Computer Vision, ECCV 2026
+  date: 2026-08-17
+  co-author: true
+  shortPublisher: ECCV'26
+  buttons:
+    - type: docs
+      text: PDF
+      link: https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5786.pdf
+  tags:
+    - mmWave Radar
+    - ECCV
+
+# RaLD: Generating High-Resolution 3D Radar Point Clouds with Latent Diffusion
+- id: doi:10.1609/aaai.v40i22.38946
+  type: conference
   co-author: true
   highlight: true
-  date: 2026-01-23
-  authors:
-    - Ruijie Zhang
-    - Bixin Zeng
-    - Shengpeng Wang
-    - Fuhui Zhou
-    - Wei Wang
-  publisher: The 40th Annual AAAI Conference on Artificial Intelligence
   shortPublisher: AAAI'26
   buttons:
     - type: docs
@@ -94,18 +106,11 @@
     - BLE Backscatter
 
 # SE: Self-Supervised State Estimation for Radar-Inertial System
-- url: https://openaccess.thecvf.com/content/ICCV2025/html/Wang_S3E_Self-Supervised_State_Estimation_for_Radar-Inertial_System_ICCV_2025_paper.html
+- id: doi:10.1109/ICCV51701.2025.02477
   type: conference
-  title: 'S^3E: Self-Supervised State Estimation for Radar-Inertial System'
   co-author: true
   highlight: true
   date: 2025-10-22
-  authors:
-    - Shengpeng Wang
-    - Yulong Xie
-    - Qing Liao
-    - Wei Wang
-  publisher: International Conference on Computer Vision, ICCV 2025
   shortPublisher: ICCV'25
   buttons:
     - type: docs
@@ -699,4 +704,3 @@
   type: book
   publisher: Encyclopedia of Wireless Networks
   shortPublisher: Springer
-
